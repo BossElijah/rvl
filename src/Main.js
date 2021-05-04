@@ -3,8 +3,10 @@ import Hero from './components/hero/hero';
 import Teaser from './components/teaser/teaser';
 import SectionTitle from './components/section-title/section-title';
 import BulletList from './components/bullet-list/bullet-list';
+import Wysiwyg from './components/wysiwyg/wysiwyg';
 import DrupalSVG from './images/drupal-white';
 import ReactSVG from './images/react';
+import SkillsSVG from './images/skills';
 
 const Main = () => (
   <>
@@ -15,17 +17,22 @@ const Main = () => (
       text="Verdens bedste CMS for komplekse websites. Lad os bygge noget unikt
         sammen."
       buttonText="Læs mere om Drupal"
-      buttonImg={<DrupalSVG />}
+      icon={<DrupalSVG />}
     />
     <Teaser
       img="https://editor.revealit.dk/sites/default/files/2019-05/react-logo_0.svg"
       title="React"
       text="React er det hotteste lige nu. Vær med på forkanten af fremtidens frontend-udvikling."
       buttonText="Læs mere om React"
-      buttonImg={<ReactSVG />}
+      icon={<ReactSVG />}
     />
     <SectionTitle title="Lej en Drupal- eller React-konsulent" />
     <BulletList />
+    <Wysiwyg
+      icon={<SkillsSVG />}
+      buttonUrl="/jeres-udvidede-web-afdeling"
+      buttonText="Læs mere"
+    />
   </>
 );
 
