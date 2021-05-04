@@ -38,24 +38,16 @@
   }
 
   .teaser__button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border: none;
     background: $light-blue;
     color: $dark_blue;
     margin-left: auto;
-    transition: .25s;
+    justify-content: space-between;
 
     &:hover {
       background: $purple;
       color: unset;
     }
-  }
-
-  svg {
-    height: 25px;
-    padding-right: 16px;
   }
 
   &:nth-of-type(even) {
