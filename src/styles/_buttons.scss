@@ -1,0 +1,11 @@
+.button {
+  height: 60px;
+  min-width: 250px;
+  width: fit-content;
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  padding: 16px;
+  border: 2px solid $light-blue;
+  border-radius: 5px;
+  text-decoration: none;
+}
