@@ -1,14 +1,12 @@
 import React from 'react';
+import Logo from '../logo/logo';
 
 const Header = () => {
   return (
     <div className="header">
-      <div>
-        <img
-          src="https://editor.revealit.dk/sites/default/files/2019-08/revealit-logo-square.svg"
-          alt="Logo"
-        />
-      </div>
+      <a href="/">
+        <Logo />
+      </a>
       <div className="header__language-container">
         <a href="/en">EN</a>
         <a href="/">DA</a>
