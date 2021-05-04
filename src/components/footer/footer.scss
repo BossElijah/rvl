@@ -1,0 +1,46 @@
+.footer {
+  position: absolute; // @todo: Might be removed when page gets more content.
+  bottom: 0; // @todo: Might be removed when page gets more content.
+  width: 100%; // @todo: Might be removed when page gets more content.
+  height: 250px;
+  border-top: $purple 4px solid;
+
+  .footer__content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.25rem;
+  }
+
+  .footer__contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    p, a {
+      margin: 6px;
+    }
+  }
+
+  .footer__partner-container {
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+    height: 50px;
+    text-decoration: none;
+
+    span {
+      position: absolute;
+      bottom: -2px;
+      border-bottom: 1px solid $purple;
+    }
+  }
+
+  img {
+    height: 50px;
+  }
+}
