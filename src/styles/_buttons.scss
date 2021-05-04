@@ -10,11 +10,15 @@
   text-decoration: none;
   transition: 0.25s;
   display: flex;
-  align-items: center;
-  
+  align-items: center;  
 
   svg {
     height: 25px;
     padding-right: 16px;
+  }
+
+  &:hover {
+    background: $light-blue;
+    color: $dark-blue;
   }
 }
