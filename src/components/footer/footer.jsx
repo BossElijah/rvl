@@ -13,7 +13,8 @@ const Footer = () => {
         <img
           src="https://1tf4c53zz50h1rzp3y2z0ejc-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/Digitalist_Logotype_White-RGB-300x146.png"
           alt="Digitalist"
-        />&nbsp;
+        />
+        &nbsp;
         <span>associate</span>
       </a>
     </div>
