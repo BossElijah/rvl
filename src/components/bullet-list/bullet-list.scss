@@ -1,0 +1,25 @@
+.bullet-list {
+  max-width: 680px;
+  padding: 16px;
+  margin: 32px auto;
+  list-style: none;
+  color: $light-blue;
+  outline: 3px solid $purple;
+  outline-offset: 3px;
+
+  .bullet-list__item {
+    position: relative;
+    padding: 8px;
+
+    span {
+      font-size: 1.5rem;
+      margin-left: 30px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

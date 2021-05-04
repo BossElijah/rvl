@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './components/hero/hero';
 import Teaser from './components/teaser/teaser';
 import SectionTitle from './components/section-title/section-title';
+import BulletList from './components/bullet-list/bullet-list';
 import DrupalSVG from './images/drupal-white';
 import ReactSVG from './images/react';
 
@@ -24,6 +25,7 @@ const Main = () => (
       buttonImg={<ReactSVG />}
     />
     <SectionTitle title="Lej en Drupal- eller React-konsulent" />
+    <BulletList />
   </>
 );
 
