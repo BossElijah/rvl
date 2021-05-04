@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/hero/hero';
 import Teaser from './components/teaser/teaser';
+import SectionTitle from './components/section-title/section-title';
 import DrupalSVG from './images/drupal-white';
 import ReactSVG from './images/react';
 
@@ -22,6 +23,7 @@ const Main = () => (
       buttonText="Læs mere om React"
       buttonImg={<ReactSVG />}
     />
+    <SectionTitle title="Lej en Drupal- eller React-konsulent" />
   </>
 );
 
