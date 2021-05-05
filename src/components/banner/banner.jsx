@@ -1,8 +1,7 @@
 import React from 'react';
 
-const Banner = () => {
-  return (
-    <div className="banner">
+const Banner = () => (
+  <div className="banner">
     <div className="banner__content">
       <h3 className="banner__title">Det siger vores kunder om os</h3>
       <p className="banner__text--main">
@@ -13,10 +12,11 @@ const Banner = () => {
         betaler kun for den tid, som vi har brug for. Det er en model, der
         fungerer rigtig godt for os.”
       </p>
-      <p className="banner__text--customer">Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet</p>
+      <p className="banner__text--customer">
+        Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet
+      </p>
     </div>
-    </div>
-  );
-};
+  </div>
+);
 
 export default Banner;
