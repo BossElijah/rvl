@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo = () => (
+const RvlLogoSVG = () => (
   <svg
     className="logo"
     viewBox="0 0 193.5 188"
@@ -44,4 +44,4 @@ const Logo = () => (
   </svg>
 );
 
-export default Logo;
+export default RvlLogoSVG;

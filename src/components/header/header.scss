@@ -6,6 +6,22 @@
   padding: 24px;
   z-index: 100;
 
+  .logo {
+    height: 50px;
+    width: 50px;
+    stroke: white;
+    transition: 0.25s;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+        g {
+          stroke: $light-blue;
+        }
+      }
+    }
+  }
+
   .header__language-container a {
     display: block;
     text-decoration: none;
