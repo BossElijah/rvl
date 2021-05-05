@@ -50,6 +50,7 @@
     }
   }
 
+  // @todo: Later, this layout should be a choice made by the editor.
   &:nth-of-type(even) {
     border-color: $purple;
     flex-direction: row-reverse;
