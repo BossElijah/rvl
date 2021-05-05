@@ -1,13 +1,20 @@
 .teaser-deck {
   max-width: 1180px;
-  height: 450px;
-  border: 35px solid $light-blue;
+  border: 25px solid $light-blue;
   margin: 48px auto;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  @media ($tablet-landscape-up) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media ($widescreen-down) {
+    margin: 48px 15px;
+    border: 15px solid $light-blue;
+  }
 
   .teaser__image-container {
     width: 40%;
+    padding-bottom: 0 !important;
   }
 
   .teaser__content {
@@ -16,25 +23,45 @@
 
   .teaser__image-container,
   .teaser__content {
+    width: 100%;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media ($phone-down) {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   .teaser__image {
-    height: 90%;
+    max-width: 40%;
+    max-height: 100%;
     margin: auto;
+    @media ($tablet-landscape-up) {
+      max-width: 100%;
+    }
   }
 
   .teaser__title {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     font-size: 3rem;
+    @media ($tablet-landscape-up) {
+      margin-bottom: 42px;
+    }
+    @media ($phone-down) {
+      font-size: 2.5rem;
+    }
   }
 
   .teaser__text {
-    margin-bottom: 40px;
-    font-size: 1.5rem;
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    line-height: 32px;
+    @media ($tablet-landscape-up) {
+      font-size: 1.5rem;
+      margin-bottom: 42px;
+    }
   }
 
   .teaser__button {
@@ -43,10 +70,15 @@
     color: $dark_blue;
     margin-left: auto;
     justify-content: space-between;
+    @media ($phone-down) {
+      margin-left: unset;
+    }
 
-    &:hover {
-      background: $purple;
-      color: unset;
+    @media (hover: hover) {
+      &:hover {
+        background: $purple;
+        color: unset;
+      }
     }
   }
 
@@ -59,9 +91,11 @@
       background: $purple;
       color: unset;
 
-      &:hover {
-        background: $light-blue;
-        color: $dark_blue;
+      @media (hover: hover) {
+        &:hover {
+          background: $light-blue;
+          color: $dark_blue;
+        }
       }
     }
   }

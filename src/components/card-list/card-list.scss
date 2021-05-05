@@ -3,4 +3,7 @@
   max-width: 1200px;
   padding: 16px;
   margin: 0 auto 5rem;
+  @media ($desktop-down) {
+    display: block;
+  }
 }

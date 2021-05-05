@@ -24,11 +24,10 @@ $light-blue: #06b5f6;
 $light-blue--darker: #03475f;
 
 // Size variables
-$mobile: 320px;
-$tablet: 480px;
-$desktop: 960px;
-$tablet-down: max-width 959px;
-$tablet-landscape-down: max-width 768px;
+$phone-down: 'max-width: 600px';
+$tablet-landscape-up: 'min-width: 699px';
+$desktop-down: 'max-width: 880px';
+$widescreen-down: 'max-width: 1250px';
 
 /* Typefaces */
 $sans-serif-small: 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica,
