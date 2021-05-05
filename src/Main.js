@@ -4,6 +4,7 @@ import Teaser from './components/teaser/teaser';
 import SectionTitle from './components/section-title/section-title';
 import BulletList from './components/bullet-list/bullet-list';
 import Wysiwyg from './components/wysiwyg/wysiwyg';
+import Banner from './components/banner/banner';
 import DrupalSVG from './images/drupal-white';
 import ReactSVG from './images/react';
 import SkillsSVG from './images/skills';
@@ -33,6 +34,7 @@ const Main = () => (
       buttonUrl="/jeres-udvidede-web-afdeling"
       buttonText="Læs mere"
     />
+    <Banner />
   </>
 );
 

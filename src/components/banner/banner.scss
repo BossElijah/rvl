@@ -1,0 +1,30 @@
+.banner {
+  background: $purple;
+
+  .banner__content {
+    max-width: 680px;
+    padding: 48px 0;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner__title {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+  }
+
+  .banner__text--main {
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .banner__text--customer {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+}
