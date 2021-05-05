@@ -5,7 +5,7 @@ const Wysiwyg = () => (
   <div className="wysiwyg">
     <h2 style={{ marginBottom: '2rem', color: 'red', fontSize: '2rem' }}>
       Warning!{' '}
-      <span style={{fontSize: '1.5rem', color: '#fff' }}>
+      <span style={{ fontSize: '1.5rem', color: '#fff' }}>
         ( These Wysiwyg's might look a lot different when starting to use the
         right content )
       </span>
