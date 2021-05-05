@@ -1,10 +1,20 @@
 .teaser-item {
   padding: 32px 24px;
   border: 5px solid $purple;
-  margin: 16px;
   color: $light-blue;
+  margin: 16px 0;
   @media ($tablet-landscape-up) {
-    width: calc(50% - (16px * 2));
+    width: calc(50% - 8px);
+  }
+
+  @media ($tablet-landscape-up) {
+    &:nth-of-type(odd) {
+      margin: 8px 8px 8px 0;
+    }
+
+    &:nth-of-type(even) {
+      margin: 8px 0 8px 8px;
+    }
   }
 
   .teaser-item__title-container {
@@ -17,7 +27,7 @@
     @media ($tablet-landscape-up) {
       font-size: 2rem;
     }
-    @media ($mobile-down) {
+    @media (max-width: $mobile) {
       font-size: 1.5rem;
     }
   }

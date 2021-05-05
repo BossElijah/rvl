@@ -1,9 +1,10 @@
 import React from 'react';
+import SectionTitle from '../section-title/section-title';
 
 const Banner = () => (
   <div className="banner">
     <div className="banner__content">
-      <h3 className="banner__title">Det siger vores kunder om os</h3>
+      <SectionTitle />
       <p className="banner__text--main">
         „Reveal IT's konsulent har gennem flere år hjulpet os med at
         implementere solide Drupal-løsninger indenfor en række komplekse

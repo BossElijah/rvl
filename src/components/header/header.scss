@@ -3,8 +3,9 @@
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  padding: 24px;
   z-index: 100;
+  margin: 0 -16px;
+  padding: 16px;
 
   .logo {
     height: 50px;

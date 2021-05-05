@@ -5,15 +5,15 @@ const BulletList = () => (
   <ul className="bullet-list">
     <li className="bullet-list__item">
       <BulletSVG />
-      &nbsp;&nbsp;<span>Har I brug for ekstra ressourcer?</span>
+      <span>Har I brug for ekstra ressourcer?</span>
     </li>
     <li className="bullet-list__item">
       <BulletSVG />
-      &nbsp;&nbsp;<span>Mangler I kompetencer in-house?</span>
+      <span>Mangler I kompetencer in-house?</span>
     </li>
     <li className="bullet-list__item">
       <BulletSVG />
-      &nbsp;&nbsp;<span>Skal et projekt hurtigt i mål?</span>
+      <span>Skal et projekt hurtigt i mål?</span>
     </li>
   </ul>
 );

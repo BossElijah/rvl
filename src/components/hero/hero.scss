@@ -1,18 +1,19 @@
 .hero {
   position: relative;
+  margin: 0 -16px;
 
   .hero-filter {
     background: $darkest_blue;
-    height: 100%;
   }
 
   .hero__background-image {
     opacity: 0.25;
     filter: grayscale(50%);
     width: 100%;
-    height: auto;
     min-height: 350px;
     max-height: 100vh;
+    // @todo: Find out why this is needed:
+    margin-bottom: -4px;
   }
 
   .hero__logo {

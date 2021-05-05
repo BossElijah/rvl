@@ -7,10 +7,11 @@
 body {
   max-width: 100vw;
   font-family: $sans-serif-small;
-  color: $medium-dark;
+  color: $text-color;
   background: $dark_blue;
+  padding: 0 16px;
 }
 
 a {
-  color: $medium-dark;
+  color: $text-color;
 }

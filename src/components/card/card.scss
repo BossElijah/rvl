@@ -9,7 +9,7 @@
     margin: 16px auto !important;
     display: flex;
   }
-  @media ($mobile-down) {
+  @media (max-width: $mobile) {
     display: block;
     max-width: 350px;
   }
@@ -34,7 +34,7 @@
     @media ($desktop-down) {
       width: 30%;
     }
-    @media ($mobile-down) {
+    @media (max-width: $mobile) {
       width: 100%;
     }
   }
@@ -43,7 +43,7 @@
     @media ($desktop-down) {
       padding: 24px;
     }
-    @media ($mobile-down) {
+    @media (max-width: $mobile) {
       padding: unset;
     }
   }
@@ -63,5 +63,9 @@
     min-width: unset;
     width: 100%;
     justify-content: center;
+    @media (min-width: $mobile) and ($desktop-down) {
+      width: 200px;
+      margin-left: auto;
+    }
   }
 }
