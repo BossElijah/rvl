@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DrupalWhite = () => (
+const DrupalSVG = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 430">
     <path
       fill="currentColor"
@@ -9,4 +9,4 @@ const DrupalWhite = () => (
   </svg>
 );
 
-export default DrupalWhite;
+export default DrupalSVG;

@@ -5,9 +5,10 @@ import SectionTitle from './components/section-title/section-title';
 import BulletList from './components/bullet-list/bullet-list';
 import Wysiwyg from './components/wysiwyg/wysiwyg';
 import Banner from './components/banner/banner';
-import DrupalSVG from './images/drupal-white';
-import ReactSVG from './images/react';
-import SkillsSVG from './images/skills';
+import TeaserList from './components/teaser-list/teaser-list';
+import DrupalSVG from './images/drupal-white.svg';
+import ReactSVG from './images/react.svg';
+import SkillsSVG from './images/skills.svg';
 
 const Main = () => (
   <>
@@ -35,6 +36,8 @@ const Main = () => (
       buttonText="Læs mere"
     />
     <Banner />
+    <SectionTitle title="Det kan vi tilføje til dit projekt" />
+    <TeaserList />
   </>
 );
 
