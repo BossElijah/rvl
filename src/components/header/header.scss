@@ -12,9 +12,11 @@
     font-size: 1.25rem;
     transition: 0.25s;
 
-    &:hover {
-      color: $light-blue;
-      transform: scale(1.5);
+    @media (hover: hover) {
+      &:hover {
+        color: $light-blue;
+        transform: scale(1.5);
+      }
     }
   }
 }

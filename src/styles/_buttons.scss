@@ -1,8 +1,8 @@
 .button {
-  height: 60px;
+  height: 45px;
   min-width: 250px;
   width: fit-content;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-size: 1.125rem;
   padding: 16px;
   border: 2px solid $light-blue;
@@ -11,14 +11,19 @@
   transition: 0.25s;
   display: flex;
   align-items: center;
+  @media ($tablet-landscape-up) {
+    height: 60px;
+  }
 
   svg {
     height: 25px;
-    padding-right: 16px;
+    padding-right: 7px;
   }
 
-  &:hover {
-    background: $light-blue;
-    color: $dark-blue;
+  @media (hover: hover) {
+    &:hover {
+      background: $light-blue;
+      color: $dark-blue;
+    }
   }
 }
