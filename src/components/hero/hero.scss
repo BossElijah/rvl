@@ -1,5 +1,5 @@
 .hero {
-  height: 800px;
+  height: 725px;
   position: relative;
 
   .hero-filter {
@@ -9,6 +9,8 @@
 
   .hero__background-image {
     background-image: url('https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-08/background-bit-bytes-2004161-web.jpg?itok=hTmNsRrh');
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.25;
     filter: grayscale(50%);
     height: 100%;
