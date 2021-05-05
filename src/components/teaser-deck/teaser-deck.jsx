@@ -1,8 +1,8 @@
 import React from 'react';
 import DrupalSVG from '../../images/drupal-white.svg';
 
-const Teaser = () => (
-  <div className="teaser">
+const TeaserDeck= () => (
+  <div className="teaser-deck">
     <div className="teaser__image-container">
       <img
         className="teaser__image"
@@ -24,4 +24,4 @@ const Teaser = () => (
   </div>
 );
 
-export default Teaser;
+export default TeaserDeck;

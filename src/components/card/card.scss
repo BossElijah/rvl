@@ -1,0 +1,38 @@
+.card {
+  width: calc(100% / 3);
+  padding: 24px;
+  border: 3px solid $light-blue;
+
+  &:first-of-type {
+    margin-right: 16px;
+  }
+
+  &:nth-of-type(2) {
+    margin: 0 16px;
+  }
+
+  &:last-of-type {
+    margin-left: 16px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+    margin: 24px 0;
+  }
+
+  .card__text {
+    font-size: 1.25rem;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .card__button {
+    width: 100%;
+    justify-content: center;
+  }
+}
