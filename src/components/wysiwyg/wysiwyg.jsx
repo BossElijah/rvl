@@ -1,15 +1,12 @@
 import React from 'react';
+import SectionTitle from '../section-title/section-title';
+import BulletList from '../bullet-list/bullet-list';
 import SkillsSVG from '../../images/skills.svg';
 
 const Wysiwyg = () => (
   <div className="wysiwyg">
-    <h2 style={{ marginBottom: '2rem', color: 'red', fontSize: '2rem' }}>
-      Warning!{' '}
-      <span style={{ fontSize: '1.5rem', color: '#fff' }}>
-        ( These Wysiwyg's might look a lot different when starting to use the
-        right content )
-      </span>
-    </h2>
+    <SectionTitle />
+    <BulletList />
     <p>
       Vi er eksperter i Drupal og React med mange års erfaring. Lej en af vores
       konsulenter – i kortere eller længere tid – og få ny inspiration eller
