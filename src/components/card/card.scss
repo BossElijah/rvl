@@ -9,7 +9,7 @@
     margin: 16px auto !important;
     display: flex;
   }
-  @media ($phone-down) {
+  @media ($mobile-down) {
     display: block;
     max-width: 350px;
   }
@@ -34,7 +34,7 @@
     @media ($desktop-down) {
       width: 30%;
     }
-    @media ($phone-down) {
+    @media ($mobile-down) {
       width: 100%;
     }
   }
@@ -43,7 +43,7 @@
     @media ($desktop-down) {
       padding: 24px;
     }
-    @media ($phone-down) {
+    @media ($mobile-down) {
       padding: unset;
     }
   }
