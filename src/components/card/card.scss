@@ -60,7 +60,8 @@
     min-width: unset;
     width: 100%;
     justify-content: center;
-    @media ($mobile) and (max-width: 880px) { // 880 = desktop.
+    @media ($mobile) and (max-width: 880px) {
+      // 880 = desktop.
       width: 200px;
       margin-left: auto;
     }

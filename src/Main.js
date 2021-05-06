@@ -53,7 +53,10 @@ const Main = () => (
     />
     <SectionTitle title="Det kan vi tilføje til dit projekt" />
     <TeaserList />
-    <Wysiwyg title="Hvorfor vælge Reveal IT?" text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React." />
+    <Wysiwyg
+      title="Hvorfor vælge Reveal IT?"
+      text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React."
+    />
     <CardList />
   </>
 );
