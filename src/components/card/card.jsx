@@ -1,20 +1,17 @@
 import React from 'react';
+import Button from '../button/button';
 
-const Card = () => (
+const Card = ({ img, title, text, buttonText, buttonUrl }) => (
   <div className="card">
-    <img
-      src="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-09/businessman_drawing_a_graph.jpg?itok=Wxcb6dPp"
-      alt="This is a card IMG"
-    />
+    <img src={img} alt={title} />
     <div className="card__content">
-      <h3 className="card__title">Online-booking til hoteller</h3>
-      <p className="card__text">
-        Vi har specialiseret os i at udvikle bookingløsninger til hotelbranchen,
-        hvor vi integrerer hotellets hjemmeside og PMS.
-      </p>
-      <a href="/online-booking-system-hotel" className="button card__button">
-        Læs mere
-      </a>
+      <h3 className="card__title">{title}</h3>
+      <p className="card__text">{text}</p>
+      <Button
+        buttonUrl={buttonUrl}
+        className="card__button"
+        buttonText={buttonText}
+      />
     </div>
   </div>
 );

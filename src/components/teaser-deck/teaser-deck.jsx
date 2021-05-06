@@ -1,25 +1,20 @@
 import React from 'react';
-import DrupalSVG from '../../images/drupal-white.svg';
+import Button from '../button/button';
 
-const TeaserDeck = ({ layout }) => (
+const TeaserDeck = ({ img, title, text, buttonText, layout, buttonIcon }) => (
   <div className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser__image-container">
-      <img
-        className="teaser__image"
-        src="https://editor.revealit.dk/sites/default/files/2019-05/druplicon-vector_0.svg"
-        alt="Drupal"
-      />
+      <img className="teaser__image" src={img} alt={title} />
     </div>
     <div className="teaser__content">
-      <h3 className="teaser__title">Drupal</h3>
-      <p className="teaser__text">
-        Verdens bedste CMS for komplekse websites. Lad os bygge noget unikt
-        sammen.
-      </p>
-      <a href="/drupal" className="button teaser__button">
-        <DrupalSVG />
-        Læs mere om Drupal
-      </a>
+      <h3 className="teaser__title">{title}</h3>
+      <p className="teaser__text">{text}</p>
+      <Button
+        buttonText={buttonText}
+        buttonUrl={`/${title}`}
+        className="teaser__button"
+        icon={buttonIcon}
+      />
     </div>
   </div>
 );
