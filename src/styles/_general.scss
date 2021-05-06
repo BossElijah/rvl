@@ -11,8 +11,7 @@ body {
   color: $text-color;
   background: $dark_blue;
   padding: 0 16px;
-  
-  // @todo: padding: 0 24px; somewhere.
+
   @media ($tablet) {
     padding: 0 24px;
   }
@@ -32,4 +31,10 @@ h6 {
 
 a {
   color: $text-color;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
