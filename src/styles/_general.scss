@@ -6,10 +6,15 @@
 
 body {
   max-width: 100vw;
-  font-family: $sans-serif-small;
+  font-family: $sans;
+  font-weight: 400;
   color: $text-color;
   background: $dark_blue;
   padding: 0 16px;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+  font-family: $titles;
 }
 
 a {
