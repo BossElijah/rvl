@@ -1,8 +1,12 @@
 .footer {
   height: 250px;
   border-top: $purple 4px solid;
-  margin: 0 -16px;
+  margin: 0 -32px;
   position: relative;
+  @media (max-width: $desktop) {
+    margin: 0 -16px;
+
+  }
 
   .footer__content-wrapper {
     height: 100%;
@@ -29,7 +33,7 @@
     transform: translateY(-50%);
     height: 50px;
     text-decoration: none;
-    @media ($desktop-down) {
+    @media (max-width: $desktop) {
       top: unset;
       right: 50%;
       bottom: 25px;
@@ -39,7 +43,7 @@
 
     img {
       height: 50px;
-      @media ($desktop-down) {
+      @media (max-width: $desktop) {
         height: 40px;
       }
     }
@@ -48,7 +52,7 @@
       position: relative;
       bottom: 3px;
       border-bottom: 1px solid $purple;
-      @media ($desktop-down) {
+      @media (max-width: $desktop) {
         font-size: 11px;
       }
     }

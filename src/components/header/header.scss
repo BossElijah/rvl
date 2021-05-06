@@ -1,16 +1,19 @@
 .header {
   position: absolute;
   display: flex;
-  width: 100vw;
   justify-content: space-between;
+  width: 100vw;
   z-index: 100;
-  margin: 0 -16px;
+  margin: 0 -32px;
   padding: 24px;
+  @media (max-width: $desktop) {
+    margin: 0 -16px;
+
+  }
 
   .logo {
     height: 50px;
     width: 50px;
-    stroke: white;
     transition: 0.25s;
 
     @media (hover: hover) {
@@ -24,7 +27,7 @@
   }
 
   .header__language-container {
-    @media ($desktop-down) {
+    @media (max-width: $desktop) {
       margin: 0 -6px;
     }
 
@@ -34,7 +37,7 @@
     font-size: 1.25rem;
     transition: 0.25s;
 
-    @media ($desktop-down) {
+    @media (max-width: $desktop) {
       display: unset;
       padding: 6px;
     }

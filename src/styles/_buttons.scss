@@ -11,7 +11,7 @@
   transition: 0.25s;
   display: flex;
   align-items: center;
-  @media ($tablet-landscape-up) {
+  @media (min-width: $tablet-landscape) {
     height: 60px;
   }
 

@@ -10,10 +10,9 @@ $light-blue--darker: #03475f;
 
 // Size variables
 $mobile: 600px;
-$widescreen-down: 'max-width: 1250px';
-$desktop-down: 'max-width: 880px';
-$desktop-up: 'min-width: 1100px';
-$tablet-landscape-up: 'min-width: 699px';
+$widescreen: 1250px;
+$desktop: 880px;
+$tablet-landscape: 699px;
 
 /* Typefaces */
 $sans: 'IBM Plex Sans', sans-serif;

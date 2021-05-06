@@ -1,19 +1,18 @@
 .banner {
   background: $purple;
-  margin: 0 -16px 48px;
+  margin: 0 -32px 48px;
   padding: 32px;
+  @media (max-width: $desktop) {
+    margin: 0 -16px 48px;
+  }
 
   .banner__content {
     max-width: 680px;
     margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   h2 {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .banner__text--main {
@@ -26,6 +25,5 @@
 
   .banner__text--customer {
     font-size: 1.5rem;
-    line-height: 30px;
   }
 }

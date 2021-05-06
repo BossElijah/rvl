@@ -1,18 +1,6 @@
 .card {
-  width: calc((100% / 3) - (24px));
-  padding: 24px;
+  padding: 16px;
   border: 2px solid $light-blue;
-
-  @media ($desktop-down) {
-    width: 100%;
-    margin: 0;
-    margin: 16px auto !important;
-    display: flex;
-  }
-  @media (max-width: $mobile) {
-    display: block;
-    max-width: 350px;
-  }
 
   &:first-of-type {
     margin-right: 16px;
@@ -26,12 +14,24 @@
     margin-left: 16px;
   }
 
+  @media (max-width: $desktop) {
+    display: flex;
+    &:first-of-type,
+    &:nth-of-type(2),
+    &:last-of-type {
+      margin: 16px auto;
+    }
+  }
+  @media (max-width: $mobile) {
+    display: block;
+    max-width: 350px;
+  }
+
   img {
     width: 100%;
-    height: auto;
     object-fit: cover;
 
-    @media ($desktop-down) {
+    @media (max-width: $desktop) {
       width: 30%;
     }
     @media (max-width: $mobile) {
@@ -40,7 +40,7 @@
   }
 
   .card__content {
-    @media ($desktop-down) {
+    @media (max-width: $desktop) {
       padding: 24px;
     }
     @media (max-width: $mobile) {
@@ -56,7 +56,6 @@
   .card__text {
     font-size: 1.25rem;
     font-weight: 200;
-    line-height: 24px;
     margin-bottom: 32px;
   }
 
@@ -64,7 +63,7 @@
     min-width: unset;
     width: 100%;
     justify-content: center;
-    @media (min-width: $mobile) and ($desktop-down) {
+    @media (min-width: $mobile) and (max-width: $desktop) {
       width: 200px;
       margin-left: auto;
     }
