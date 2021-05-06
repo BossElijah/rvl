@@ -1,0 +1,35 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 199;
+  background: $darker-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    font-size: calc(2rem + 4vmin);
+    font-weight: 500;
+    color: $light-blue;
+    text-align: center;
+    text-decoration: none;
+
+    @media ($tablet) {
+      font-size: calc(2rem + 5vmin);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background: $light-blue;
+        color: $darker-blue;
+      }
+    }
+  }
+}
