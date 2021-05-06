@@ -6,7 +6,7 @@ const Hamburger = ({ onClick, showMenu }) => (
     className={`hamburger${showMenu ? ' menu-open' : ''}`}
     onClick={onClick}
   >
-    <HamburgerOpenSVG />
+    <HamburgerOpenSVG showMenu={showMenu} />
   </button>
 );
 

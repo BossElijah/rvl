@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
-const HamburgerOpenSVG = () => {
-  let [showMenu, setShowMenu] = useState(false);
-
+const HamburgerOpenSVG = ({ showMenu }) => {
   return (
     <svg
-      onClick={() => setShowMenu(!showMenu)}
+      onClick={() => (showMenu = !showMenu)}
       enableBackground="new 0 0 64 64"
       viewBox="0 0 64 64"
       xmlns="http://www.w3.org/2000/svg"
