@@ -1,11 +1,13 @@
 .footer {
   height: 250px;
   border-top: $purple 4px solid;
-  margin: 0 -32px;
+  margin: 0 -16px;
   position: relative;
-  @media (max-width: $desktop) {
-    margin: 0 -16px;
-
+  @media ($tablet) {
+    margin: 0 -24px;
+  }
+  @media ($desktop) {
+    margin: 0 -32px;
   }
 
   .footer__content-wrapper {
@@ -28,23 +30,22 @@
 
   .footer__partner-container {
     position: absolute;
-    right: 120px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 50px;
+    right: 50%;
+    bottom: 25px;
+    transform: translateX(50%);
+    height: 40px;
     text-decoration: none;
-    @media (max-width: $desktop) {
-      top: unset;
-      right: 50%;
-      bottom: 25px;
-      transform: translateX(50%);
-      height: 40px;
+    @media ($desktop) {
+      right: 120px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 50px;
     }
 
     img {
-      height: 50px;
-      @media (max-width: $desktop) {
-        height: 40px;
+      height: 40px;
+      @media ($desktop) {
+        height: 50px;
       }
     }
 
@@ -52,8 +53,9 @@
       position: relative;
       bottom: 3px;
       border-bottom: 1px solid $purple;
-      @media (max-width: $desktop) {
-        font-size: 11px;
+      font-size: 0.6875rem;
+      @media ($desktop) {
+        font-size: 0.9375rem;
       }
     }
   }

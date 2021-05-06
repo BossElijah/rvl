@@ -1,8 +1,8 @@
 .card-list {
-  display: flex;
+  display: block;
   max-width: 1200px;
   margin: 0 auto 80px;
-  @media (max-width: $desktop) {
-    display: block;
+  @media ($desktop) {
+    display: flex;
   }
 }

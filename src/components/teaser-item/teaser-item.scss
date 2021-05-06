@@ -3,17 +3,26 @@
   border: 5px solid $purple;
   color: $light-blue;
   margin: 16px 0;
-  @media (min-width: $tablet-landscape) {
-    width: calc(50% - 8px);
-  }
+  @media ($tablet) {
+    width: calc(50% - 12px);
 
-  @media (min-width: $tablet-landscape) {
     &:nth-of-type(odd) {
-      margin: 8px 8px 8px 0;
+      margin: 12px 12px 12px 0;
     }
 
     &:nth-of-type(even) {
-      margin: 8px 0 8px 8px;
+      margin: 12px 0 12px 12px;
+    }
+  }
+  @media ($desktop) {
+    width: calc(50% - 16px);
+
+    &:nth-of-type(odd) {
+      margin: 16px 16px 16px 0;
+    }
+
+    &:nth-of-type(even) {
+      margin: 16px 0 16px 16px;
     }
   }
 
@@ -22,20 +31,20 @@
   }
 
   .teaser-item__title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 16px;
-    @media (min-width: $tablet-landscape) {
-      font-size: 2rem;
+    @media ($mobile) {
+      font-size: 1.75rem;
     }
-    @media (max-width: $mobile) {
-      font-size: 1.5rem;
+    @media ($tablet) {
+      font-size: 2rem;
     }
   }
 
   .teaser-item__text {
     font-size: 1.125rem;
     line-height: 24px;
-    @media (min-width: $tablet-landscape) {
+    @media ($tablet) {
       line-height: 32px;
       font-size: 1.25rem;
     }

@@ -3,9 +3,9 @@
   margin: 46px auto;
 
   h2 {
-    text-align: left;
-    @media (max-width: $desktop) {
-      text-align: center;
+    text-align: center;
+    @media ($desktop) {
+      text-align: left;
     }
   }
 

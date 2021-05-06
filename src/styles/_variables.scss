@@ -1,6 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/93a467f70a3e7b27a9b52a686f351dbe?family=DINNextLTPro-Regular);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+// Color variables.
 $text-color: #e5e5e5;
 $dark_blue: #001c42;
 $darkest_blue: #080548;
@@ -8,12 +9,12 @@ $purple: #790677;
 $light-blue: #05b5f5;
 $light-blue--darker: #03475f;
 
-// Size variables
-$mobile: 600px;
-$widescreen: 1250px;
-$desktop: 880px;
-$tablet-landscape: 699px;
+// Size variables.
+$mobile: 'min-width: 600px';
+$tablet: 'min-width: 699px';
+$desktop: 'min-width: 880px'; // NO!!!
+$widescreen: 'min-width: 1250px';
 
-/* Typefaces */
+// Font variables.
 $sans: 'IBM Plex Sans', sans-serif;
 $titles: 'DINNextLTPro-Regular', 'Din', sans-serif;

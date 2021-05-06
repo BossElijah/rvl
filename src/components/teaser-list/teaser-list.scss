@@ -1,7 +1,7 @@
 .teaser-list {
   max-width: 1200px;
   margin: 32px auto 0;
-  @media (min-width: $tablet-landscape) {
+  @media ($tablet) {
     display: flex;
     flex-wrap: wrap;
   }

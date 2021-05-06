@@ -1,8 +1,11 @@
 .hero {
   position: relative;
-  margin: 0 -32px;
-  @media (max-width: $desktop) {
-    margin: 0 -16px;
+  margin: 0 -16px 48px;
+  @media ($tablet) {
+    margin: 0 -24px;
+  }
+  @media ($desktop) {
+    margin: 0 -32px;
   }
 
   .hero-filter {
@@ -40,7 +43,7 @@
     background: -webkit-linear-gradient($light-blue, $light-blue--darker);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    @media (min-width: $tablet-landscape) {
+    @media ($tablet) {
       font-size: 3rem;
       bottom: 40px;
     }

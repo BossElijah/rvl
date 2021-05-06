@@ -4,11 +4,10 @@
   justify-content: space-between;
   width: 100vw;
   z-index: 100;
-  margin: 0 -32px;
   padding: 24px;
-  @media (max-width: $desktop) {
-    margin: 0 -16px;
-
+  margin: 0 -16px;
+  @media ($desktop) {
+    margin: 0 -32px;
   }
 
   .logo {
@@ -27,27 +26,28 @@
   }
 
   .header__language-container {
-    @media (max-width: $desktop) {
-      margin: 0 -6px;
+    margin: 0 -6px;
+    @media ($desktop) {
+      margin: unset;
     }
 
-  a {
-    display: block;
-    text-decoration: none;
-    font-size: 1.25rem;
-    transition: 0.25s;
-
-    @media (max-width: $desktop) {
-      display: unset;
+    a {
+      text-decoration: none;
+      font-size: 1.25rem;
+      transition: 0.25s;
       padding: 6px;
-    }
 
-    @media (hover: hover) {
-      &:hover {
-        color: $light-blue;
-        transform: scale(1.5);
+      @media ($desktop) {
+        display: block;
+        padding: unset;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          color: $light-blue;
+          transform: scale(1.5);
+        }
       }
     }
   }
-}
 }
