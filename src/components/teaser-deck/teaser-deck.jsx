@@ -1,8 +1,8 @@
 import React from 'react';
 import DrupalSVG from '../../images/drupal-white.svg';
 
-const TeaserDeck = () => (
-  <div className="teaser-deck">
+const TeaserDeck = ({ layout }) => (
+  <div className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser__image-container">
       <img
         className="teaser__image"

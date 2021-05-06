@@ -11,7 +11,7 @@ const Main = () => (
   <>
     <Hero />
     <TeaserDeck />
-    <TeaserDeck />
+    <TeaserDeck layout="secondary" />
     <Wysiwyg />
     <Banner />
     <SectionTitle />

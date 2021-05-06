@@ -90,9 +90,8 @@
       }
     }
   }
-
-   // @todo: This layout should be a choice made by the editor when fetching data from the backend.
-  &:nth-of-type(even) {
+  
+  &--secondary {
     border-color: $purple;
     flex-direction: row-reverse;
 
