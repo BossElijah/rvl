@@ -1,5 +1,5 @@
 import React from 'react';
-import HamburgerOpenSVG from '../../images/hamburger-open.svg.jsx';
+import HamburgerOpenSVG from '../../images/hamburger.svg.jsx';
 
 const Hamburger = ({ onClick, showMenu }) => (
   <button
