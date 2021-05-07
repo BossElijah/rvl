@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HamburgerOpenSVG = ({ showMenu }) => (
+const HamburgerSVG = ({ showMenu }) => (
   <svg
     onClick={() => (showMenu = !showMenu)}
     enableBackground="new 0 0 64 64"
@@ -34,4 +34,4 @@ const HamburgerOpenSVG = ({ showMenu }) => (
   </svg>
 );
 
-export default HamburgerOpenSVG;
+export default HamburgerSVG;
