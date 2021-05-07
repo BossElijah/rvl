@@ -1,7 +1,7 @@
 .card {
-  padding: 16px;
+  padding: $body-padding-small;
   border: 2px solid $light-blue;
-  margin: 24px auto;
+  margin: $body-padding-small auto;
   max-width: 350px;
 
   @media ($mobile) {
@@ -9,19 +9,24 @@
     display: flex;
   }
 
+  @media ($tablet) {
+    margin: $body-padding-medium auto;
+    padding: $body-padding-medium;
+  }
+
   @media ($desktop) {
     width: calc((100% / 3));
     display: block;
     &:first-of-type {
-      margin: 0 16px 0 0;
+      margin: 0 ($body-padding-large / 2) 0 0;
     }
 
     &:nth-of-type(2) {
-      margin: 0 16px;
+      margin: 0 ($body-padding-large / 2);
     }
 
     &:last-of-type {
-      margin: 0 0 0 16px;
+      margin: 0 0 0 ($body-padding-large / 2);
     }
   }
 
@@ -64,10 +69,13 @@
     min-width: unset;
     width: 100%;
     justify-content: center;
-    @media ($mobile) and (max-width: 880px) {
-      // 880 = desktop.
+    @media ($mobile) {
       width: 200px;
       margin-left: auto;
+    }
+    @media ($desktop) {
+      width: 100%;
+      margin-left: unset;
     }
   }
 }

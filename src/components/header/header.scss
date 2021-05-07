@@ -5,9 +5,12 @@
   width: 100vw;
   z-index: 100;
   padding: 24px;
-  margin: 0 -16px;
+  margin: 0 (-$body-padding-small);
+  @media ($tablet) {
+    margin: 0 (-$body-padding-medium);
+  }
   @media ($desktop) {
-    margin: 0 -32px;
+    margin: 0 (-$body-padding-large);
   }
 
   .logo {
@@ -26,19 +29,19 @@
   }
 
   .header__language-container {
-    margin: 0 -6px;
+    display: flex;
     @media ($desktop) {
-      margin: unset;
+      display: block;
     }
-
+    
     a {
+      display: block;
       text-decoration: none;
       font-size: 1.25rem;
       transition: 0.25s;
       padding: 6px;
 
       @media ($desktop) {
-        display: block;
         padding: unset;
       }
 

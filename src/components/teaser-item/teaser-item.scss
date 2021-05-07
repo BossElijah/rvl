@@ -2,27 +2,31 @@
   padding: 32px 24px;
   border: 5px solid $purple;
   color: $light-blue;
-  margin: 16px 0;
+  margin: $body-padding-small 0;
   @media ($tablet) {
-    width: calc(50% - 12px);
+    width: calc(50% - #{$body-padding-medium / 2});
 
     &:nth-of-type(odd) {
-      margin: 12px 12px 12px 0;
+      margin: ($body-padding-medium / 2) ($body-padding-medium / 2)
+        ($body-padding-medium / 2) 0;
     }
 
     &:nth-of-type(even) {
-      margin: 12px 0 12px 12px;
+      margin: ($body-padding-medium / 2) 0 ($body-padding-medium / 2)
+        ($body-padding-medium / 2);
     }
   }
   @media ($desktop) {
-    width: calc(50% - 16px);
+    width: calc(50% - #{$body-padding-large / 2});
 
     &:nth-of-type(odd) {
-      margin: 16px 16px 16px 0;
+      margin: ($body-padding-large / 2) ($body-padding-large / 2)
+        ($body-padding-large / 2) 0;
     }
 
     &:nth-of-type(even) {
-      margin: 16px 0 16px 16px;
+      margin: ($body-padding-large / 2) 0 ($body-padding-large / 2)
+        ($body-padding-large / 2);
     }
   }
 

@@ -1,20 +1,16 @@
 .teaser-deck {
   max-width: calc(#{$max-content-width} - 20px);
-  border: 15px solid $light-blue;
-  margin: 16px 0;
-  display: block;
+  border: $body-padding-small solid $light-blue;
+  margin: $body-padding-small 0;
   @media ($tablet) {
     display: flex;
-    margin: 24px 0;
+    margin: $body-padding-medium 0;
     align-items: center;
   }
   @media ($desktop) {
     border: 32px solid $light-blue;
-    margin: 32px 0;
+    margin: $body-padding-large auto;
   }
-  @media ($widescreen) {
-    margin: 32px auto;
-  } 
 
   .teaser__image-container,
   .teaser__content {

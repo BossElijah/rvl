@@ -1,11 +1,11 @@
 .hero {
   position: relative;
-  margin: 0 -16px 48px;
+  margin: 0 (-$body-padding-small) 48px;
   @media ($tablet) {
-    margin: 0 -24px;
+    margin: 0 (-$body-padding-medium);
   }
   @media ($desktop) {
-    margin: 0 -32px;
+    margin: 0 (-$body-padding-large);
   }
 
   .hero-filter {

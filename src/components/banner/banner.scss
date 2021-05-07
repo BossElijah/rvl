@@ -1,12 +1,12 @@
 .banner {
   background: $purple;
-  margin: 0 -16px 48px;
+  margin: 0 (-$body-padding-small) 48px;
   padding: 32px;
   @media ($tablet) {
-    margin: 0 -24px 48px;
+    margin: 0 (-$body-padding-medium) 48px;
   }
   @media ($desktop) {
-    margin: 0 -32px 48px;
+    margin: 0 (-$body-padding-large) 48px;
   }
 
   .banner__content {

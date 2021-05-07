@@ -1,13 +1,13 @@
 .footer {
+  position: relative;
   height: 250px;
   border-top: $purple 4px solid;
-  margin: 0 -16px;
-  position: relative;
+  margin: 0 (-$body-padding-small);
   @media ($tablet) {
-    margin: 0 -24px;
+    margin: 0 (-$body-padding-medium);
   }
   @media ($desktop) {
-    margin: 0 -32px;
+    margin: 0 (-$body-padding-large);
   }
 
   .footer__content-wrapper {
