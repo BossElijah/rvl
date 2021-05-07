@@ -3,7 +3,7 @@ import Hero from './components/hero/hero';
 import TeaserDeck from './components/teaser-deck/teaser-deck';
 import PageTitle from './components/page-title/page-title';
 import SectionTitle from './components/section-title/section-title';
-import BulletList from './components/bullet-list/bullet-list';
+import BulletListList from './components/bullet-list-list/bullet-list-list';
 import Wysiwyg from './components/wysiwyg/wysiwyg';
 import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
@@ -38,10 +38,14 @@ const pages = {
         layout="secondary"
       />
       <SectionTitle title="Lej en Drupal- eller React-konsulent" />
-      <BulletList
-        one="Har I brug for ekstra ressourcer?"
-        two="Mangler I kompetencer in-house?"
-        three="Skal et projekt hurtigt i mål?"
+      <BulletListList
+        list={[
+          [
+            { text: 'Har I brug for ekstra ressourcer?' },
+            { text: 'Mangler I kompetencer in-house?' },
+            { text: 'Skal et projekt hurtigt i mål?' }
+          ]
+        ]}
       />
       <Wysiwyg
         text="Vi er eksperter i Drupal og React med mange års erfaring. Lej en af
@@ -75,15 +79,19 @@ const pages = {
         backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-09/code-coder-codes-2194062.jpg?itok=_QgYaCOD"
       />
       <PageTitle title="Jeres udvidede web-afdeling" />
-      <BulletList
-        one="Har I brug for ekstra ressourcer?"
-        two="Mangler I kompetencer in-house?"
-        three="Skal et projekt hurtigt i mål?"
-      />
-      <BulletList
-        one="Vi laver kun Drupal og React"
-        two="Vi er gode til det"
-        three="Billigere end I kan gøre det selv"
+      <BulletListList
+        list={[
+          [
+            { text: 'Har I brug for ekstra ressourcer?' },
+            { text: 'Mangler I kompetencer in-house?' },
+            { text: 'Skal et projekt hurtigt i mål?' }
+          ],
+          [
+            { text: 'Vi laver kun Drupal og React' },
+            { text: 'Vi er gode til det' },
+            { text: 'Billigere end I kan gøre det selv' }
+          ]
+        ]}
       />
       <Wysiwyg
         title="Fleksible konsulenter der leverer varen"
@@ -120,12 +128,16 @@ const pages = {
         text="Vi arbejder overvejende remote. I sparer en kontorplads, og vi sparer transporten.<br/><br/>I får en dedikeret konsulent hos os, som kender jeres organisation og holder fast i opgaverne fra start til slut, herunder deadlines og timeforbrug.<br/><br/>I bestemmer, om vi afregner per time eller en fast pris per projekt/opgave – eller vi stiller en fast medarbejder til rådighed for et fast beløb per måned.<br/><br/>Vi er fleksible og tilbyder den løsning, der passer bedst til jer."
       />
 
-      <div style={{
-        color: 'red',
-        fontSize: '2.5rem',
-        textAlign: 'center',
-        margin: '0 0 3rem 0'
-      }}>Her kommer der en kontakt form</div>
+      <div
+        style={{
+          color: 'red',
+          fontSize: '2.5rem',
+          textAlign: 'center',
+          margin: '0 0 3rem 0'
+        }}
+      >
+        Her kommer der en kontakt form
+      </div>
     </>
   )
 };
@@ -133,7 +145,7 @@ const pages = {
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
   if (pathname) return pathname;
-  return <div>404 Page not Found</div>
+  return <div>404 Page not Found</div>;
 };
 
 export default Main;
