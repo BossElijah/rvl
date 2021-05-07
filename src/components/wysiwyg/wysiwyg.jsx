@@ -2,8 +2,8 @@ import React from 'react';
 import SectionTitle from '../section-title/section-title';
 import Button from '../button/button';
 
-const Wysiwyg = ({ title, text, buttonIcon, buttonUrl, buttonText }) => (
-  <div className="wysiwyg">
+const Wysiwyg = ({ title, text, buttonIcon, buttonUrl, buttonText, layout }) => (
+  <div className={`wysiwyg${layout ? ` text-${layout}` : ''}`}>
     {title && <SectionTitle title={title} />}
     <p dangerouslySetInnerHTML={{ __html: text }} />
     {buttonUrl && (
