@@ -1,0 +1,20 @@
+.bullet-list-container {
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+.bullet-list-container-2-col {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    width: calc(50% - #{$body-padding-small / 2});
+    @media ($tablet) {
+      width: calc(50% - #{$body-padding-medium / 2});
+    }
+    @media ($desktop) {
+      width: calc(50% - #{$body-padding-large / 2});
+    }
+    margin: 0;
+  }
+}
