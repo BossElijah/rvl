@@ -1,19 +1,19 @@
 import React from 'react';
 import BulletSVG from '../../images/bullet.svg';
 
-const BulletList = () => (
+const BulletList = ({one, two, three}) => (
   <ul className="bullet-list">
     <li className="bullet-list__item">
       <BulletSVG />
-      <span>Har I brug for ekstra ressourcer?</span>
+      <span>{one}</span>
     </li>
     <li className="bullet-list__item">
       <BulletSVG />
-      <span>Mangler I kompetencer in-house?</span>
+      <span>{two}</span>
     </li>
     <li className="bullet-list__item">
       <BulletSVG />
-      <span>Skal et projekt hurtigt i mål?</span>
+      <span>{three}</span>
     </li>
   </ul>
 );

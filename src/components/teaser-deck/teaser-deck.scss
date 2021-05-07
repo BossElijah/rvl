@@ -6,6 +6,7 @@
   @media ($tablet) {
     display: flex;
     margin: 24px 0;
+    align-items: center;
   }
   @media ($desktop) {
     border: 32px solid $light-blue;
@@ -13,7 +14,7 @@
   }
   @media ($widescreen) {
     margin: 32px auto;
-  }
+  } 
 
   .teaser__image-container,
   .teaser__content {
@@ -33,8 +34,7 @@
     padding-bottom: 0;
     @media ($tablet) {
       padding-bottom: 32px;
-      margin: auto;
-      width: 35%;
+      width: 40%;
     }
   }
 

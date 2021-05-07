@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
 
-const TeaserDeck = ({ img, title, text, buttonText, layout, buttonIcon }) => (
+const TeaserDeck = ({ img, title, text, buttonText, layout, buttonIcon, buttonUrl }) => (
   <div className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser__image-container">
       <img className="teaser__image" src={img} alt={title} />
@@ -11,7 +11,7 @@ const TeaserDeck = ({ img, title, text, buttonText, layout, buttonIcon }) => (
       <p className="teaser__text">{text}</p>
       <Button
         buttonText={buttonText}
-        buttonUrl={`/${title.toLowerCase()}`}
+        buttonUrl={buttonUrl}
         className="teaser__button"
         icon={buttonIcon}
       />
