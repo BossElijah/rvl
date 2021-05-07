@@ -17,20 +17,14 @@ const CardList = () => (
       buttonUrl="/artikler"
       buttonText="Læs mere"
     />
+    
     <Card
-      img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-08/solving_problems.png?itok=SiFso3F3"
-      title="Artikler"
-      text="Læs artikler skrevet af Reveal IT's konsulenter om opgradering af Drupal, open source-bevægelsen, Drupal som headless CMS m.m."
-      buttonUrl="/artikler"
-      buttonText="Læs mere"
-    />
-    {/* <Card
       img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-08/solving_problems.png?itok=SiFso3F3"
       title="Web-konsulenter"
       text="Der er stor efterspørgsel på Drupal- og React-udviklere. Læs mere om, hvordan Reveal IT griber et konsulent-samarbejde an."
       buttonUrl="/jeres-udvidede-web-afdeling"
       buttonText="Læs mere"
-    /> */}
+    />
   </div>
 );
 

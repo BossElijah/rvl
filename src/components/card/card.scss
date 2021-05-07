@@ -1,8 +1,8 @@
 .card {
   padding: 16px;
   border: 2px solid $light-blue;
-  max-width: 350px;
   margin: 24px auto;
+  max-width: 350px;
 
   @media ($mobile) {
     max-width: unset;
@@ -10,6 +10,7 @@
   }
 
   @media ($desktop) {
+    width: calc((100% / 3));
     display: block;
     &:first-of-type {
       margin: 0 16px 0 0;
@@ -28,7 +29,7 @@
     width: 100%;
     object-fit: cover;
     @media ($mobile) {
-      width: 30%;
+      width: calc(100% / 3);
     }
     @media ($desktop) {
       width: 100%;
