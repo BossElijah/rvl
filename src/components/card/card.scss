@@ -32,7 +32,7 @@
 
   img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     @media ($mobile) {
       width: calc(100% / 3);
@@ -40,7 +40,7 @@
     }
     @media ($desktop) {
       width: 100%;
-      height: 40%;
+      height: 150px;
     }
   }
 
@@ -55,14 +55,20 @@
 
   .card__title {
     font-size: 1.5rem;
-    margin: 24px 0;
+    margin: 12px 0;
     text-align: center;
+    @media ($mobile) {
+      text-align: left;
+    }
+    @media ($desktop) {
+      text-align: center;
+    }
   }
 
   .card__text {
     font-size: 1.25rem;
     font-weight: 200;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .card__button {

@@ -13,7 +13,7 @@ import ReactSVG from './images/react.svg';
 import SkillsSVG from './images/skills.svg';
 
 const pages = {
-  '/rvl': (
+  '/': (
     <>
       <Hero
         title="Drupal + React Specialister"
@@ -67,12 +67,13 @@ const pages = {
       <TeaserList />
       <Wysiwyg
         title="Hvorfor vælge Reveal IT?"
-        text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React."
+        text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React"
+        layout="center"
       />
       <CardList />{' '}
     </>
   ),
-  '/rvl/jeres-udvidede-web-afdeling': (
+  '/jeres-udvidede-web-afdeling': (
     <>
       <Hero
         logo="https://editor.revealit.dk/sites/default/files/2019-09/drupal-react-wide3.svg"
