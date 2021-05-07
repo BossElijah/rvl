@@ -13,7 +13,7 @@ import ReactSVG from './images/react.svg';
 import SkillsSVG from './images/skills.svg';
 
 const pages = {
-  '/': (
+  '/rvl': (
     <>
       <Hero
         title="Drupal + React Specialister"
@@ -72,7 +72,7 @@ const pages = {
       <CardList />{' '}
     </>
   ),
-  '/jeres-udvidede-web-afdeling': (
+  '/rvl/jeres-udvidede-web-afdeling': (
     <>
       <Hero
         logo="https://editor.revealit.dk/sites/default/files/2019-09/drupal-react-wide3.svg"
