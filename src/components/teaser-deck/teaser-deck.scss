@@ -1,5 +1,5 @@
 .teaser-deck {
-  max-width: 1180px;
+  max-width: calc(#{$max-content-width} - 20px);
   border: 15px solid $light-blue;
   margin: 16px 0;
   display: block;

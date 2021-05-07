@@ -23,7 +23,7 @@
   }
 
   .hero__logo {
-    max-width: 1400px;
+    max-width: calc(#{$max-content-width} + 200px);
     width: 90%;
     position: absolute;
     top: 50%;

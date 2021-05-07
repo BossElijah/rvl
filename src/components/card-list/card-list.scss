@@ -1,5 +1,5 @@
 .card-list {
-  max-width: 1200px;
+  max-width: $max-content-width;
   margin: 0 auto 80px;
   @media ($desktop) {
     display: flex;
