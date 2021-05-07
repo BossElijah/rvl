@@ -9,7 +9,9 @@ import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
 import CardList from './components/card-list/card-list';
 import DrupalSVG from './images/drupal-white.svg';
+import DrupalBigSVG from './images/drupal-big.svg';
 import ReactSVG from './images/react.svg';
+import ReactBigSVG from './images/react-big.svg';
 import SkillsSVG from './images/skills.svg';
 
 const pages = {
@@ -21,7 +23,7 @@ const pages = {
         backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-08/background-bit-bytes-2004161-web.jpg?itok=hTmNsRrh"
       />
       <TeaserDeck
-        img="https://editor.revealit.dk/sites/default/files/2019-05/druplicon-vector_0.svg"
+        img={<DrupalBigSVG />}
         title="Drupal"
         text="Verdens bedste CMS for komplekse websites. Lad os bygge noget unikt sammen."
         buttonText="Læs mere om Drupal"
@@ -29,7 +31,7 @@ const pages = {
         buttonUrl="/drupal"
       />
       <TeaserDeck
-        img="https://editor.revealit.dk/sites/default/files/2019-05/react-logo_0.svg"
+        img={<ReactBigSVG />}
         title="React"
         text="React er det hotteste lige nu. Vær med på forkanten af fremtidens frontend-udvikling."
         buttonText="Læs mere om React"
@@ -104,7 +106,7 @@ const pages = {
       />
       <SectionTitle title="Hvad kan vi bidrage med?" />
       <TeaserDeck
-        img="https://editor.revealit.dk/sites/default/files/2019-05/druplicon-vector_0.svg"
+        img={<DrupalBigSVG />}
         title="Drupal-udvikling"
         text="Vi er eksperter i Drupal. Giv os en opgave, og vi løser den – seriøst."
         buttonText="Læs mere om Drupal"
@@ -112,7 +114,7 @@ const pages = {
         buttonUrl="/drupal"
       />
       <TeaserDeck
-        img="https://editor.revealit.dk/sites/default/files/2019-05/react-logo_0.svg"
+        img={<ReactBigSVG />}
         title="React-udvikling"
         text="React er det hotte nu. Få en knivskarp og moderne frontend-løsning."
         buttonText="Læs mere om React"

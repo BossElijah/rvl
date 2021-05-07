@@ -41,22 +41,17 @@
   }
 
   .teaser__image {
-    max-width: 40%;
-    max-height: 100%;
-    margin: auto;
-    @media ($tablet) {
-      max-width: 100%;
-    }
+    width: 100%;
   }
 
   .teaser__title {
     margin-bottom: 16px;
     font-size: 2.5rem;
-    @media ($tablet) {
-      margin-bottom: 42px;
-    }
     @media ($mobile) {
       font-size: 3rem;
+    }
+    @media ($tablet) {
+      margin-bottom: 42px;
     }
   }
 
@@ -74,7 +69,6 @@
     border: none;
     background: $light-blue;
     color: $dark_blue;
-    justify-content: space-between;
     @media ($mobile) {
       margin-left: auto;
     }

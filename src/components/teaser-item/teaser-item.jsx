@@ -1,5 +1,4 @@
 import React from 'react';
-import SkillsSVG from '../../images/skills.svg';
 
 const TeaserItem = ({ icon, title, text }) => (
   <div className="teaser-item">

@@ -5,7 +5,7 @@ const Hero = ({ title, logo, backgroundImg }) => (
     <div className="hero-filter">
       <img src={backgroundImg} alt="Hero" className="hero__background-image" />
     </div>
-    <img className="hero__logo" src={logo} alt="Logo" />
+    {<img className="hero__logo" src={logo} alt="Logo" />}
     {title && <h1 className="hero__title">{title}</h1>}
   </div>
 );

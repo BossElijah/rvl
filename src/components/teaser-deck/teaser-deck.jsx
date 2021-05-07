@@ -4,7 +4,8 @@ import Button from '../button/button';
 const TeaserDeck = ({ img, title, text, buttonText, layout, buttonIcon, buttonUrl }) => (
   <div className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser__image-container">
-      <img className="teaser__image" src={img} alt={title} />
+      {/* <img className="teaser__image" src={img} alt={title} /> */}
+      {img}
     </div>
     <div className="teaser__content">
       <h3 className="teaser__title">{title}</h3>
