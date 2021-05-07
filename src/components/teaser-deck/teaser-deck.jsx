@@ -11,7 +11,7 @@ const TeaserDeck = ({ img, title, text, buttonText, layout, buttonIcon }) => (
       <p className="teaser__text">{text}</p>
       <Button
         buttonText={buttonText}
-        buttonUrl={`/${title}`}
+        buttonUrl={`/${title.toLowerCase()}`}
         className="teaser__button"
         icon={buttonIcon}
       />
