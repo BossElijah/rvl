@@ -4,17 +4,18 @@
 }
 
 .bullet-list-container-2-col {
-  display: flex;
   justify-content: space-between;
+  @media ($tablet) {
+    display: flex;
+  }
 
   ul {
-    width: calc(50% - #{$body-padding-small / 2});
+    margin: $body-padding-small 0;
     @media ($tablet) {
       width: calc(50% - #{$body-padding-medium / 2});
     }
     @media ($desktop) {
       width: calc(50% - #{$body-padding-large / 2});
     }
-    margin: 0;
   }
 }
