@@ -145,7 +145,7 @@ const pages = {
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
   if (pathname) return pathname;
-  return <div>404 Page not Found</div>;
+  return <PageTitle title="404 Page Not Found!" />;
 };
 
 export default Main;
