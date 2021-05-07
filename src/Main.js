@@ -3,7 +3,7 @@ import Hero from './components/hero/hero';
 import TeaserDeck from './components/teaser-deck/teaser-deck';
 import PageTitle from './components/page-title/page-title';
 import SectionTitle from './components/section-title/section-title';
-import BulletListList from './components/bullet-list-list/bullet-list-list';
+import BulletListContainer from './components/bullet-list-container/bullet-list-container';
 import Wysiwyg from './components/wysiwyg/wysiwyg';
 import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
@@ -38,7 +38,7 @@ const pages = {
         layout="secondary"
       />
       <SectionTitle title="Lej en Drupal- eller React-konsulent" />
-      <BulletListList
+      <BulletListContainer
         list={[
           [
             { text: 'Har I brug for ekstra ressourcer?' },
@@ -79,7 +79,7 @@ const pages = {
         backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-09/code-coder-codes-2194062.jpg?itok=_QgYaCOD"
       />
       <PageTitle title="Jeres udvidede web-afdeling" />
-      <BulletListList
+      <BulletListContainer
         list={[
           [
             { text: 'Har I brug for ekstra ressourcer?' },

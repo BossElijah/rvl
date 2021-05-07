@@ -1,7 +1,7 @@
 import React from 'react';
 import BulletList from '../bullet-list/bullet-list';
 
-const BulletListList = ({ list }) => {
+const BulletListContainer = ({ list }) => {
   let counter = 0;
   const finalData = list.map((item, index) => {
     counter++;
@@ -18,4 +18,4 @@ const BulletListList = ({ list }) => {
   );
 };
 
-export default BulletListList;
+export default BulletListContainer;
