@@ -1,0 +1,20 @@
+.text-and-media {
+  margin-bottom: 32px;
+
+  .section-title {
+    text-align: left;
+  }
+
+  .text-and-media__content {
+    display: flex;
+
+    svg {
+      flex-shrink: 0;
+      margin-right: 32px;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
