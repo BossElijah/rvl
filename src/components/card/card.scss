@@ -3,6 +3,7 @@
   border: 2px solid $light-blue;
   margin: $body-padding-small auto;
   max-width: 350px;
+  position: relative;
 
   @media ($mobile) {
     max-width: unset;
@@ -68,20 +69,28 @@
   .card__text {
     font-size: 1.25rem;
     font-weight: 200;
-    margin-bottom: 24px;
+    margin-bottom: 88px;
   }
 
   .card__button {
-    min-width: unset;
-    width: 100%;
+    position: absolute;
+    bottom: $body-padding-small;
+    right: $body-padding-small;
+    left: $body-padding-small;
     justify-content: center;
+    min-width: unset;
     @media ($mobile) {
-      width: 200px;
-      margin-left: auto;
+      width: 240px;
+      left: unset;
+    }
+    @media ($tablet) {
+      bottom: $body-padding-medium;
+      right: $body-padding-medium;
     }
     @media ($desktop) {
-      width: 100%;
-      margin-left: unset;
+      width: unset;
+      left: $body-padding-medium;
     }
+
   }
 }
