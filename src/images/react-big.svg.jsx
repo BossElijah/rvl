@@ -3,7 +3,7 @@ import React from 'react';
 const ReactBigSVG = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    enable-background="new 0 0 841.9 595.3"
+    enableBackground="new 0 0 841.9 595.3"
     viewBox="150 60 550 480"
   >
     <g fill="#61dafb">
