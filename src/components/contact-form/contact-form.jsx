@@ -1,15 +1,10 @@
 import React from 'react';
 import TextAndMedia from '../text-and-media/text-and-media';
 import InputField from '../input-field/input-field';
-import ManSittingAtDesk from '../../images/man-sitting-desk.svg';
 
-const ContactForm = () => (
+const ContactForm = ({ title, image, text }) => (
   <div className="contact-form">
-    <TextAndMedia
-      title="Lad os høre fra jer"
-      image={<ManSittingAtDesk />}
-      text="Vi er nemme at snakke med, og vi er vant til at finde løsninger, der dækker vores kunders behov. Vi laver kun så lange aftaler, som I ønsker, så det er risikofrit at prøve os af.<br/><br/>Ring +45 71 99 03 77, eller skriv og få en snak om, hvad I har brug for."
-    />
+    <TextAndMedia title={title} image={image} text={text} />
     <InputField
       type="input"
       name="name"
@@ -28,7 +23,7 @@ const ContactForm = () => (
       placeholder="Din besked..."
       require
     />
-    <button type="button" className="button button--outline">
+    <button type="submit" className="button button--outline">
       Send besked
     </button>
   </div>

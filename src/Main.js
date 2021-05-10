@@ -16,6 +16,7 @@ import ReactBigSVG from './images/react-big.svg';
 import SkillsSVG from './images/skills.svg';
 import RvlLogoTextSVG from './images/rvl-logo-text.svg';
 import DrupalThinkReactSVG from './images/drupal-think-react.svg';
+import ManSittingAtDesk from './images/man-sitting-desk.svg';
 
 const pages = {
   '/': (
@@ -139,8 +140,11 @@ const pages = {
         title="Hvordan gør vi det?"
         text="Vi arbejder overvejende remote. I sparer en kontorplads, og vi sparer transporten.<br/><br/>I får en dedikeret konsulent hos os, som kender jeres organisation og holder fast i opgaverne fra start til slut, herunder deadlines og timeforbrug.<br/><br/>I bestemmer, om vi afregner per time eller en fast pris per projekt/opgave – eller vi stiller en fast medarbejder til rådighed for et fast beløb per måned.<br/><br/>Vi er fleksible og tilbyder den løsning, der passer bedst til jer."
       />
-
-      <ContactForm />
+      <ContactForm
+        title="Lad os høre fra jer"
+        image={<ManSittingAtDesk />}
+        text="Vi er nemme at snakke med, og vi er vant til at finde løsninger, der dækker vores kunders behov. Vi laver kun så lange aftaler, som I ønsker, så det er risikofrit at prøve os af.<br/><br/>Ring +45 71 99 03 77, eller skriv og få en snak om, hvad I har brug for."
+      />
     </>
   )
 };
