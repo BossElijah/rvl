@@ -7,14 +7,22 @@
 
   .text-and-media__content {
     display: flex;
+    flex-direction: column;
+    @media ($mobile) {
+      flex-direction: row;
+    }
 
     svg {
       flex-shrink: 0;
-      margin-right: 32px;
+      margin: 0 auto 16px;
+      @media ($mobile) {
+        margin: auto 32px auto 0;
+      }
     }
 
     p {
       font-size: 1.25rem;
+      line-height: 28px;
     }
   }
 }
