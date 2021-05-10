@@ -14,13 +14,15 @@ import DrupalBigSVG from './images/drupal-big.svg';
 import ReactSVG from './images/react.svg';
 import ReactBigSVG from './images/react-big.svg';
 import SkillsSVG from './images/skills.svg';
+import RvlLogoTextSVG from './images/rvl-logo-text.svg';
+import DrupalThinkReactSVG from './images/drupal-think-react.svg';
 
 const pages = {
   '/': (
     <>
       <Hero
         title="Drupal + React Specialister"
-        logo="https://editor.revealit.dk/sites/default/files/2019-08/reveal-logo-light-blue.svg"
+        logo={<RvlLogoTextSVG />}
         backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-08/background-bit-bytes-2004161-web.jpg?itok=hTmNsRrh"
       />
       <TeaserDeck
@@ -83,7 +85,7 @@ const pages = {
   '/jeres-udvidede-web-afdeling': (
     <>
       <Hero
-        logo="https://editor.revealit.dk/sites/default/files/2019-09/drupal-react-wide3.svg"
+        logo={<DrupalThinkReactSVG />}
         backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-09/code-coder-codes-2194062.jpg?itok=_QgYaCOD"
       />
       <PageTitle title="Jeres udvidede web-afdeling" />
