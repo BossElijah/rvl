@@ -5,17 +5,22 @@ import Button from '../button/button';
 const Wysiwyg = ({
   title,
   text,
+  layout,
   buttonIcon,
   buttonUrl,
   buttonText,
-  layout,
   buttonLayout
 }) => (
   <div className={`wysiwyg${layout ? ` text-${layout}` : ''}`}>
     {title && <SectionTitle title={title} />}
-    <p dangerouslySetInnerHTML={{ __html: text }} />
+    {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
     {buttonUrl && (
-      <Button buttonUrl={buttonUrl} icon={buttonIcon} buttonText={buttonText} layout={buttonLayout} />
+      <Button
+        buttonUrl={buttonUrl}
+        icon={buttonIcon}
+        buttonText={buttonText}
+        layout={buttonLayout}
+      />
     )}
   </div>
 );
