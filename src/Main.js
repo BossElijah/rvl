@@ -8,6 +8,7 @@ import Wysiwyg from './components/wysiwyg/wysiwyg';
 import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
 import CardList from './components/card-list/card-list';
+import ContactForm from './components/contact-form/contact-form';
 import DrupalSVG from './images/drupal-white.svg';
 import DrupalBigSVG from './images/drupal-big.svg';
 import ReactSVG from './images/react.svg';
@@ -105,7 +106,7 @@ const pages = {
       />
       <Wysiwyg
         title="Få en bedre løsning – og spar penge samtidig!"
-        text="Vi tilbyder en omkostning, som kan skaleres op og ned efter jeres behov – og som er nem at komme af med igen. I undgår tidskrævende ansættelsesprocesser, løbende uddannelse og karriereudvikling samt dyre omlægninger, når en medarbejder pludselig siger op. I fokuserer på det, som I er bedst til, og det samme gør vi – og sammen sparer vi penge.<br/><br/><ul><li>Kom hurtigt og billigt i gang – ingen lange og dyre ansættelsesprocesser.</li><li>Tænk ikke på videreuddannelse, karrieremuligheder og opsigelsesperioder – det står vi for.</li><li>Hvis en nøgleperson pludselig siger op, så har vi altid en konsulent, som hurtigt kan træde til.</li><li>Hvad enten I har brug for en React-designer, en Drupal-udvikler eller en Drupal-arkitekt, så har vi den hurtigste og mest prisfornuftige løsning.</li></ul>"
+        text="Vi tilbyder en omkostning, som kan skaleres op og ned efter jeres behov – og som er nem at komme af med igen. I undgår tidskrævende ansættelsesprocesser, løbende uddannelse og karriereudvikling samt dyre omlægninger, når en medarbejder pludselig siger op. I fokuserer på det, som I er bedst til, og det samme gør vi – og sammen sparer vi penge.<ul><li>Kom hurtigt og billigt i gang – ingen lange og dyre ansættelsesprocesser.</li><li>Tænk ikke på videreuddannelse, karrieremuligheder og opsigelsesperioder – det står vi for.</li><li>Hvis en nøgleperson pludselig siger op, så har vi altid en konsulent, som hurtigt kan træde til.</li><li>Hvad enten I har brug for en React-designer, en Drupal-udvikler eller en Drupal-arkitekt, så har vi den hurtigste og mest prisfornuftige løsning.</li></ul>"
       />
       <SectionTitle title="Hvad kan vi bidrage med?" />
       <TeaserDeck
@@ -136,16 +137,7 @@ const pages = {
         text="Vi arbejder overvejende remote. I sparer en kontorplads, og vi sparer transporten.<br/><br/>I får en dedikeret konsulent hos os, som kender jeres organisation og holder fast i opgaverne fra start til slut, herunder deadlines og timeforbrug.<br/><br/>I bestemmer, om vi afregner per time eller en fast pris per projekt/opgave – eller vi stiller en fast medarbejder til rådighed for et fast beløb per måned.<br/><br/>Vi er fleksible og tilbyder den løsning, der passer bedst til jer."
       />
 
-      <div
-        style={{
-          color: 'red',
-          fontSize: '2.5rem',
-          textAlign: 'center',
-          margin: '0 0 3rem 0'
-        }}
-      >
-        Her kommer der en kontakt form
-      </div>
+      <ContactForm />
     </>
   )
 };
