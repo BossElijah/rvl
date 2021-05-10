@@ -13,9 +13,10 @@
   }
 
   .hero__background-image {
-    opacity: .25;
+    opacity: .4;
     filter: grayscale(50%);
     width: 100%;
+    height: 100%;
     min-height: 350px;
     max-height: 100vh;
     // @todo: Find out why this following line is needed.

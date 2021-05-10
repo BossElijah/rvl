@@ -14,7 +14,7 @@ const TeaserDeck = ({
   <div className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser__image-container">{img}</div>
     <div className="teaser__content">
-      <h3 className="teaser__title">{title}</h3>
+      <h2 className="teaser__title">{title}</h2>
       <p className="teaser__text">{text}</p>
       <Button
         buttonText={buttonText}

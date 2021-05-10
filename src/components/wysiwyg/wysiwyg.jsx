@@ -9,7 +9,8 @@ const Wysiwyg = ({
   buttonIcon,
   buttonUrl,
   buttonText,
-  buttonLayout
+  buttonLayout,
+  buttonAria
 }) => (
   <div className={`wysiwyg${layout ? ` text-${layout}` : ''}`}>
     {title && <SectionTitle title={title} />}
@@ -20,6 +21,7 @@ const Wysiwyg = ({
         icon={buttonIcon}
         buttonText={buttonText}
         layout={buttonLayout}
+        aria={buttonAria}
       />
     )}
   </div>

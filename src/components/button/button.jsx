@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Button = ({ buttonText, buttonUrl, icon, className, layout }) => (
-  <a className={`button ${className + ' button--' + layout}`} href={buttonUrl}>
+const Button = ({ buttonText, buttonUrl, icon, className, layout, aria }) => (
+  <a aria-label={aria} className={`button ${className ? className : ''} ${layout ? 'button--' + layout : ''}`} href={buttonUrl}>
     {icon}
     {buttonText}
   </a>

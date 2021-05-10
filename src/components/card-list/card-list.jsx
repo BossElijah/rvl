@@ -10,6 +10,7 @@ const CardList = ({ buttonLayout }) => (
       buttonUrl="/online-booking-system-hotel"
       buttonText="Læs mere"
       buttonLayout={buttonLayout}
+      buttonAria="Læs mere om online booking til hoteller"
     />
     <Card
       img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-09/keyboard.jpeg?itok=SsBWLbij"
@@ -18,6 +19,7 @@ const CardList = ({ buttonLayout }) => (
       buttonUrl="/artikler"
       buttonText="Læs mere"
       buttonLayout={buttonLayout}
+      buttonAria="Læs mere om alle vores artikler"
     />
 
     <Card
@@ -27,6 +29,7 @@ const CardList = ({ buttonLayout }) => (
       buttonUrl="/jeres-udvidede-web-afdeling"
       buttonText="Læs mere"
       buttonLayout={buttonLayout}
+      buttonAria="Læs mere om vores web-konsulenter"
     />
   </div>
 );

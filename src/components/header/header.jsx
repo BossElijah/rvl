@@ -3,7 +3,7 @@ import RvlLogoSVG from '../../images/rvl-logo.svg';
 
 const Header = () => (
   <div className="header">
-    <a href="/">
+    <a href="/" aria-label="Home">
       <RvlLogoSVG />
     </a>
     <div className="header__language-container">

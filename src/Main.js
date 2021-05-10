@@ -63,6 +63,7 @@ const pages = {
         buttonUrl="/jeres-udvidede-web-afdeling"
         buttonText="Læs mere"
         buttonLayout="outline"
+        buttonAria="Læs mere om vores konsulenter"
       />
       <Banner
         title="Det siger vores kunder om os"
@@ -76,7 +77,7 @@ const pages = {
         text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React"
         layout="center"
       />
-      <CardList buttonLayout="outline" />{' '}
+      <CardList buttonLayout="outline" />
     </>
   ),
   '/jeres-udvidede-web-afdeling': (
