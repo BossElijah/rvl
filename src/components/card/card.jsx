@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
 
-const Card = ({ img, title, text, buttonText, buttonUrl }) => (
+const Card = ({ img, title, text, buttonText, buttonUrl, buttonLayout }) => (
   <div className="card">
     <img src={img} alt={title} />
     <div className="card__content">
@@ -11,6 +11,7 @@ const Card = ({ img, title, text, buttonText, buttonUrl }) => (
         buttonUrl={buttonUrl}
         className="card__button"
         buttonText={buttonText}
+        layout={buttonLayout}
       />
     </div>
   </div>

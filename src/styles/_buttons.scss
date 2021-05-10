@@ -1,29 +1,56 @@
 .button {
-  height: 45px;
-  min-width: 250px;
-  width: fit-content;
+  min-height: 45px;
+  min-width: 240px;
   letter-spacing: 0.5px;
   font-size: 1.125rem;
   padding: 16px;
-  border: 2px solid $light-blue;
   border-radius: 5px;
   text-decoration: none;
-  transition: 0.25s;
+  transition: color 0.25s, background-color 0.25s;
   display: flex;
   align-items: center;
   @media ($tablet) {
-    height: 60px;
+    min-height: 60px;
   }
 
   svg {
     height: 25px;
-    padding-right: 7px;
+    width: auto;
+    flex-shrink: 0;
+    padding-right: 14px;
   }
+}
+
+.button--outline {
+  border: 2px solid $light-blue;
 
   @media (hover: hover) {
     &:hover {
       background: $light-blue;
       color: $dark-blue;
+    }
+  }
+}
+
+.button--primary {
+  background: $light-blue;
+  color: $dark_blue;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $purple;
+      color: unset;
+    }
+  }
+}
+
+.button--secondary {
+  background: $purple;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $light-blue;
+      color: $dark_blue;
     }
   }
 }

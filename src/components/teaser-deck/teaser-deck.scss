@@ -32,16 +32,21 @@
       padding-bottom: 32px;
       width: 40%;
     }
+
+    svg {
+      margin: 0 auto;
+      width: 180px;
+      height: auto;
+      @media ($tablet) {
+        width: unset;
+      }
+    }
   }
 
   .teaser__content {
     @media ($tablet) {
       width: 60%;
     }
-  }
-
-  .teaser__image {
-    width: 100%;
   }
 
   .teaser__title {
@@ -66,35 +71,13 @@
   }
 
   .teaser__button {
-    border: none;
-    background: $light-blue;
-    color: $dark_blue;
     @media ($mobile) {
       margin-left: auto;
     }
-
-    @media (hover: hover) {
-      &:hover {
-        background: $purple;
-        color: unset;
-      }
-    }
   }
+}
 
-  &--secondary {
-    border-color: $purple;
-    flex-direction: row-reverse;
-
-    .teaser__button {
-      background: $purple;
-      color: unset;
-
-      @media (hover: hover) {
-        &:hover {
-          background: $light-blue;
-          color: $dark_blue;
-        }
-      }
-    }
-  }
+.teaser-deck--secondary {
+  border-color: $purple;
+  flex-direction: row-reverse;
 }

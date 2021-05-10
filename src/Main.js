@@ -29,6 +29,7 @@ const pages = {
         buttonText="Læs mere om Drupal"
         buttonIcon={<DrupalSVG />}
         buttonUrl="/drupal"
+        buttonLayout="primary"
       />
       <TeaserDeck
         img={<ReactBigSVG />}
@@ -38,6 +39,7 @@ const pages = {
         buttonIcon={<ReactSVG />}
         buttonUrl="/react"
         layout="secondary"
+        buttonLayout="secondary"
       />
       <SectionTitle title="Lej en Drupal- eller React-konsulent" />
       <BulletListContainer
@@ -59,6 +61,7 @@ const pages = {
         buttonIcon={<SkillsSVG />}
         buttonUrl="/jeres-udvidede-web-afdeling"
         buttonText="Læs mere"
+        buttonLayout="outline"
       />
       <Banner
         title="Det siger vores kunder om os"
@@ -72,7 +75,7 @@ const pages = {
         text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React"
         layout="center"
       />
-      <CardList />{' '}
+      <CardList buttonLayout="outline" />{' '}
     </>
   ),
   '/jeres-udvidede-web-afdeling': (
@@ -112,6 +115,7 @@ const pages = {
         buttonText="Læs mere om Drupal"
         buttonIcon={<DrupalSVG />}
         buttonUrl="/drupal"
+        buttonLayout="primary"
       />
       <TeaserDeck
         img={<ReactBigSVG />}
@@ -121,6 +125,7 @@ const pages = {
         buttonIcon={<ReactSVG />}
         buttonUrl="/react"
         layout="secondary"
+        buttonLayout="secondary"
       />
       <Wysiwyg
         title="Nogle af vores tilfredse kunder"
