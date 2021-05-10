@@ -29,7 +29,13 @@ h6 {
   font-family: $titles;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   @extend %wrap-text;
 }
 
@@ -41,4 +47,8 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+textarea, input {
+  font-family: $sans;
 }

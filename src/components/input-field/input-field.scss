@@ -2,10 +2,13 @@
   height: 50px;
   width: 100%;
   padding: 1rem;
-  border: 3px solid $light-blue;
+  border: 2px solid $light-blue;
   border-radius: 5px;
+  margin-bottom: 24px;
   background: transparent;
   color: $text-color;
+  font-size: 1rem;
+  font-weight: 300;
 
   &:focus {
     outline: none;
@@ -19,4 +22,12 @@
   &:focus::placeholder {
     color: $text-color;
   }
+}
+
+.input-field--text {
+  height: 110px;
+}
+
+textarea {
+  font-size: 1rem;
 }

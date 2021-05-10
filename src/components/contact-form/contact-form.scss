@@ -1,4 +1,15 @@
 .contact-form {
   max-width: $max-content-small-width;
-  margin: 0 auto;
+  margin: 0 auto 64px;
+
+  .button {
+    font-size: 1rem;
+    font-weight: 400;
+    border: 3px solid $purple;
+
+    &:hover {
+      background: $purple;
+      color: $text-color;
+    }
+  }
 }
