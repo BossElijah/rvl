@@ -16,7 +16,7 @@
   .logo {
     height: 50px;
     width: 50px;
-    transition: 0.25s;
+    transition: .25s;
 
     @media (hover: hover) {
       &:hover {
@@ -33,12 +33,12 @@
     @media ($desktop) {
       display: block;
     }
-    
+
     a {
       display: block;
       text-decoration: none;
       font-size: 1.25rem;
-      transition: 0.25s;
+      transition: .25s;
       padding: 6px;
 
       @media ($desktop) {
