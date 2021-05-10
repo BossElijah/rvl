@@ -36,7 +36,7 @@
 
 .button--primary {
   background: $light-blue;
-  color: $dark_blue;
+  color: $dark-blue;
 
   @media (hover: hover) {
     &:hover {
@@ -52,7 +52,7 @@
   @media (hover: hover) {
     &:hover {
       background: $light-blue;
-      color: $dark_blue;
+      color: $dark-blue;
     }
   }
 }

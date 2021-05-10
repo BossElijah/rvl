@@ -9,7 +9,7 @@
   }
 
   .hero__background-image {
-    background: $darkest_blue;
+    background: $darkest-blue;
     min-height: 350px;
     height: 30vh;
     background-size: cover;
@@ -47,7 +47,7 @@
     font-size: 7vw;
     text-align: center;
     width: fit-content;
-    background: -webkit-linear-gradient($light-blue, $light-blue--darker);
+    background: -webkit-linear-gradient($light-blue, #03475f);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     @media ($tablet) {
