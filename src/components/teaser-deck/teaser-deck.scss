@@ -12,8 +12,8 @@
     margin: $body-padding-large auto;
   }
 
-  .teaser__image-container,
-  .teaser__content {
+  .teaser-deck__image-container,
+  .teaser-deck__content {
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     }
   }
 
-  .teaser__image-container {
+  .teaser-deck__image-container {
     padding-bottom: 0;
     @media ($tablet) {
       padding-bottom: 32px;
@@ -43,13 +43,13 @@
     }
   }
 
-  .teaser__content {
+  .teaser-deck__content {
     @media ($tablet) {
       width: 60%;
     }
   }
 
-  .teaser__title {
+  .teaser-deck__title {
     margin-bottom: 16px;
     font-size: 2.5rem;
     @media ($mobile) {
@@ -60,7 +60,7 @@
     }
   }
 
-  .teaser__text {
+  .teaser-deck__text {
     margin-bottom: 24px;
     font-size: 1.25rem;
     line-height: 32px;
@@ -70,7 +70,7 @@
     }
   }
 
-  .teaser__button {
+  .teaser-deck__button {
     @media ($mobile) {
       margin-left: auto;
     }

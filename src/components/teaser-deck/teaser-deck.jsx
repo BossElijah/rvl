@@ -12,14 +12,14 @@ const TeaserDeck = ({
   buttonLayout
 }) => (
   <div className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
-    <div className="teaser__image-container">{img}</div>
-    <div className="teaser__content">
-      <h2 className="teaser__title">{title}</h2>
-      <p className="teaser__text">{text}</p>
+    <div className="teaser-deck__image-container">{img}</div>
+    <div className="teaser-deck__content">
+      <h2 className="teaser-deck__title">{title}</h2>
+      <p className="teaser-deck__text">{text}</p>
       <Button
         buttonText={buttonText}
         buttonUrl={buttonUrl}
-        className="teaser__button"
+        className="teaser-deck__button"
         icon={buttonIcon}
         layout={buttonLayout}
       />
