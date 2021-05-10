@@ -1,0 +1,22 @@
+.input-field {
+  height: 50px;
+  width: 100%;
+  padding: 1rem;
+  border: 3px solid $light-blue;
+  border-radius: 5px;
+  background: transparent;
+  color: $text-color;
+
+  &:focus {
+    outline: none;
+    border-color: $purple;
+  }
+
+  &::placeholder {
+    color: $light-blue;
+  }
+
+  &:focus::placeholder {
+    color: $text-color;
+  }
+}
