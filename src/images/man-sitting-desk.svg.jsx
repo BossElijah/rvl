@@ -16,8 +16,8 @@ const ManSittingAtDesk = () => (
       y1="463.39"
       y2="178.75"
     >
-      <stop offset=".52" stop-color="#2b3593" />
-      <stop offset=".53" stop-color="#00adee" />
+      <stop offset=".52" stopColor="#2b3593" />
+      <stop offset=".53" stopColor="#00adee" />
     </linearGradient>
     <linearGradient
       id="b"
@@ -27,13 +27,13 @@ const ManSittingAtDesk = () => (
       y1="427.71"
       y2="308.39"
     >
-      <stop offset=".02" stop-color="#fff238" stop-opacity="0" />
-      <stop offset=".07" stop-color="#fff235" stop-opacity=".05" />
-      <stop offset=".17" stop-color="#fff22d" stop-opacity=".2" />
-      <stop offset=".3" stop-color="#fff220" stop-opacity=".43" />
-      <stop offset=".46" stop-color="#fff10e" stop-opacity=".75" />
-      <stop offset=".58" stop-color="#fff100" />
-      <stop offset="1" stop-color="#fff100" />
+      <stop offset=".02" stopColor="#fff238" stopOpacity="0" />
+      <stop offset=".07" stopColor="#fff235" stopOpacity=".05" />
+      <stop offset=".17" stopColor="#fff22d" stopOpacity=".2" />
+      <stop offset=".3" stopColor="#fff220" stopOpacity=".43" />
+      <stop offset=".46" stopColor="#fff10e" stopOpacity=".75" />
+      <stop offset=".58" stopColor="#fff100" />
+      <stop offset="1" stopColor="#fff100" />
     </linearGradient>
     <path
       d="m208.02 701.98-175.28-92.58 20.79-5.39 57.41 27.86-5.39-176.17 21.57 13.48 3.6 170.78 78.2 44.94z"
@@ -145,7 +145,7 @@ const ManSittingAtDesk = () => (
     <path
       d="m511.49 310.56-108.49 83.23 188.6 61.86-26.18-128.84-8.75-12.23s-27.59-9.05-28.34-8.16-16.84 4.14-16.84 4.14z"
       fill="url(#b)"
-      fill-opacity=".23"
+      fillOpacity=".23"
       transform="translate(-186.52 -151.28)"
     />
     <path
