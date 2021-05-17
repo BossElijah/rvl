@@ -1,5 +1,5 @@
 .menu {
-  overflow: hidden;
+  overflow: scroll;
   position: fixed;
   top: -100vh;
   bottom: 100vh;
@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: scroll;
   transition: top 0.5s, bottom 0.5s;
 
   a {
