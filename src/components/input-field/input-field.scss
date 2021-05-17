@@ -2,25 +2,25 @@
   height: 50px;
   width: 100%;
   padding: 1rem;
-  border: 2px solid $light-blue;
+  border: 2px solid $color-tertiary;
   border-radius: 5px;
   margin-bottom: 24px;
   background: transparent;
-  color: $text-color;
+  color: $color-text;
   font-size: 1rem;
   font-weight: 300;
 
   &:focus {
     outline: none;
-    border-color: $purple;
+    border-color: $color-secondary;
   }
 
   &::placeholder {
-    color: $light-blue;
+    color: $color-tertiary;
   }
 
   &:focus::placeholder {
-    color: $text-color;
+    color: $color-text;
   }
 }
 

@@ -4,7 +4,7 @@
 
   h2 {
     text-align: center;
-    @media ($desktop) {
+    @media ($desktop-up) {
       text-align: left;
     }
   }

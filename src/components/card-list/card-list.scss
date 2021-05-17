@@ -1,7 +1,7 @@
 .card-list {
   max-width: $max-content-width;
   margin: 0 auto 80px;
-  @media ($desktop) {
+  @media ($desktop-up) {
     display: flex;
   }
 }

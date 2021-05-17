@@ -10,7 +10,7 @@
   transition: color .25s, background-color .25s;
   display: flex;
   align-items: center;
-  @media ($tablet) {
+  @media ($tablet-up) {
     min-height: 60px;
   }
 
@@ -23,36 +23,36 @@
 }
 
 .button--outline {
-  color: $text-color;
-  border: 2px solid $light-blue;
+  color: $color-text;
+  border: 2px solid $color-tertiary;
 
   @media (hover: hover) {
     &:hover {
-      background: $light-blue;
-      color: $dark-blue;
+      background: $color-tertiary;
+      color: $color-primary;
     }
   }
 }
 
 .button--primary {
-  background: $light-blue;
-  color: $dark-blue;
+  background: $color-tertiary;
+  color: $color-primary;
 
   @media (hover: hover) {
     &:hover {
-      background: $purple;
+      background: $color-secondary;
       color: unset;
     }
   }
 }
 
 .button--secondary {
-  background: $purple;
+  background: $color-secondary;
 
   @media (hover: hover) {
     &:hover {
-      background: $light-blue;
-      color: $dark-blue;
+      background: $color-tertiary;
+      color: $color-primary;
     }
   }
 }

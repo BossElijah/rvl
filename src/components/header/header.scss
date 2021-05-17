@@ -6,10 +6,10 @@
   z-index: 99;
   padding: 24px;
   margin: 0 (-$body-padding-small);
-  @media ($tablet) {
+  @media ($tablet-up) {
     margin: 0 (-$body-padding-medium);
   }
-  @media ($desktop) {
+  @media ($desktop-up) {
     margin: 0 (-$body-padding-large);
   }
 
@@ -22,7 +22,7 @@
       &:hover {
         transform: scale(1.2);
         g {
-          stroke: $light-blue;
+          stroke: $color-tertiary;
         }
       }
     }
@@ -30,7 +30,7 @@
 
   .header__language-container {
     display: flex;
-    @media ($desktop) {
+    @media ($desktop-up) {
       display: block;
     }
 
@@ -41,13 +41,13 @@
       transition: .25s;
       padding: 6px;
 
-      @media ($desktop) {
+      @media ($desktop-up) {
         padding: unset;
       }
 
       @media (hover: hover) {
         &:hover {
-          color: $light-blue;
+          color: $color-tertiary;
           transform: scale(1.5);
         }
       }

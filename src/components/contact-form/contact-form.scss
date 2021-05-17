@@ -5,11 +5,11 @@
   .button {
     font-size: 1rem;
     font-weight: 400;
-    border: 3px solid $purple;
+    border: 3px solid $color-secondary;
 
     &:hover {
-      background: $purple;
-      color: $text-color;
+      background: $color-secondary;
+      color: $color-text;
     }
   }
 }

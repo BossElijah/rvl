@@ -1,21 +1,21 @@
 .card {
   padding: $body-padding-small;
-  border: 2px solid $light-blue;
+  border: 2px solid $color-tertiary;
   margin: $body-padding-small auto;
   max-width: 350px;
   position: relative;
 
-  @media ($mobile) {
+  @media ($mobile-up) {
     max-width: unset;
     display: flex;
   }
 
-  @media ($tablet) {
+  @media ($tablet-up) {
     margin: $body-padding-medium auto;
     padding: $body-padding-medium;
   }
 
-  @media ($desktop) {
+  @media ($desktop-up) {
     width: calc((100% / 3));
     display: block;
     &:first-of-type {
@@ -35,21 +35,21 @@
     width: 100%;
     height: 180px;
     object-fit: cover;
-    @media ($mobile) {
+    @media ($mobile-up) {
       width: calc(100% / 3);
       height: unset;
     }
-    @media ($desktop) {
+    @media ($desktop-up) {
       width: 100%;
       height: 150px;
     }
   }
 
   .card__content {
-    @media ($mobile) {
+    @media ($mobile-up) {
       padding: 24px;
     }
-    @media ($desktop) {
+    @media ($desktop-up) {
       padding: 0;
     }
   }
@@ -58,10 +58,10 @@
     font-size: 1.5rem;
     margin: 12px 0;
     text-align: center;
-    @media ($mobile) {
+    @media ($mobile-up) {
       text-align: left;
     }
-    @media ($desktop) {
+    @media ($desktop-up) {
       text-align: center;
     }
   }
@@ -79,15 +79,15 @@
     left: $body-padding-small;
     justify-content: center;
     min-width: unset;
-    @media ($mobile) {
+    @media ($mobile-up) {
       width: 240px;
       left: unset;
     }
-    @media ($tablet) {
+    @media ($tablet-up) {
       bottom: $body-padding-medium;
       right: $body-padding-medium;
     }
-    @media ($desktop) {
+    @media ($desktop-up) {
       width: unset;
       left: $body-padding-medium;
     }

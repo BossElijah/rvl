@@ -1,29 +1,29 @@
 .hero {
   position: relative;
   margin: 0 (-$body-padding-small) 48px;
-  @media ($tablet) {
+  @media ($tablet-up) {
     margin: 0 (-$body-padding-medium);
   }
-  @media ($desktop) {
+  @media ($desktop-up) {
     margin: 0 (-$body-padding-large);
   }
 
   .hero__background-image {
-    background: $darkest-blue;
+    background: $color-hero-filter;
     min-height: 350px;
     height: 30vh;
     background-size: cover;
     background-blend-mode: soft-light;
 
-    @media ($tablet) {
+    @media ($tablet-up) {
       height: 50vh;
     }
 
-    @media ($desktop) {
+    @media ($desktop-up) {
       height: 60vh;
     }
 
-    @media ($widescreen) {
+    @media ($widescreen-up) {
       height: 70vh;
     }
   }
@@ -47,10 +47,10 @@
     font-size: 7vw;
     text-align: center;
     width: fit-content;
-    background: -webkit-linear-gradient($light-blue, #03475f);
+    background: -webkit-linear-gradient($color-tertiary, #03475f);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    @media ($tablet) {
+    @media ($tablet-up) {
       font-size: 3rem;
       bottom: 40px;
     }

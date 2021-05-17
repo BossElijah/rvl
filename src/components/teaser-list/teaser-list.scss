@@ -1,7 +1,7 @@
 .teaser-list {
   max-width: $max-content-width;
   margin: 32px auto 0;
-  @media ($tablet) {
+  @media ($tablet-up) {
     display: flex;
     flex-wrap: wrap;
   }

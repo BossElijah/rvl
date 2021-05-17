@@ -1,9 +1,9 @@
 .teaser-item {
   padding: 32px 24px;
-  border: 5px solid $purple;
-  color: $light-blue;
+  border: 5px solid $color-secondary;
+  color: $color-tertiary;
   margin: $body-padding-small 0;
-  @media ($tablet) {
+  @media ($tablet-up) {
     width: calc(50% - #{$body-padding-medium / 2});
 
     &:nth-of-type(odd) {
@@ -16,7 +16,7 @@
         ($body-padding-medium / 2);
     }
   }
-  @media ($desktop) {
+  @media ($desktop-up) {
     width: calc(50% - #{$body-padding-large / 2});
 
     &:nth-of-type(odd) {
@@ -37,10 +37,10 @@
   .teaser-item__title {
     font-size: 1.5rem;
     margin-bottom: 16px;
-    @media ($mobile) {
+    @media ($mobile-up) {
       font-size: 1.75rem;
     }
-    @media ($tablet) {
+    @media ($tablet-up) {
       font-size: 2rem;
     }
   }
@@ -48,7 +48,7 @@
   .teaser-item__text {
     font-size: 1.125rem;
     line-height: 24px;
-    @media ($tablet) {
+    @media ($tablet-up) {
       line-height: 32px;
       font-size: 1.25rem;
     }

@@ -1,11 +1,11 @@
 .banner {
-  background: $purple;
+  background: $color-secondary;
   margin: 0 (-$body-padding-small) 48px;
   padding: 32px;
-  @media ($tablet) {
+  @media ($tablet-up) {
     margin: 0 (-$body-padding-medium) 48px;
   }
-  @media ($desktop) {
+  @media ($desktop-up) {
     margin: 0 (-$body-padding-large) 48px;
   }
 

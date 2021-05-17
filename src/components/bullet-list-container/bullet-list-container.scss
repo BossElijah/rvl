@@ -5,16 +5,16 @@
 
 .bullet-list-container-2-col {
   justify-content: space-between;
-  @media ($tablet) {
+  @media ($tablet-up) {
     display: flex;
   }
 
   ul {
     margin: $body-padding-small 0;
-    @media ($tablet) {
+    @media ($tablet-up) {
       width: calc(50% - #{$body-padding-medium / 2});
     }
-    @media ($desktop) {
+    @media ($desktop-up) {
       width: calc(50% - #{$body-padding-large / 2});
     }
   }

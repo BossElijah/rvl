@@ -9,7 +9,7 @@ import Footer from './components/footer/footer';
 import './styles/styles.scss';
 
 const App = () => {
-  let [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <Router>

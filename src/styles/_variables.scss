@@ -1,24 +1,29 @@
 @import url(//db.onlinewebfonts.com/c/93a467f70a3e7b27a9b52a686f351dbe?family=DINNextLTPro-Regular);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-$text-color: #e5e5e5;
-$dark-blue: #001c42;
-$darker-blue: #020025;
-$darkest-blue: #0c0a5c;
-$purple: #790677;
-$light-blue: #05b5f5;
+// Colors.
+$color-text: #e5e5e5;
+$color-primary: #001c42;
+$color-primary--dark: #020025;
+$color-secondary: #790677;
+$color-tertiary: #05b5f5;
+$color-hero-filter: #0c0a5c;
 
-$mobile: 'min-width: 600px';
-$tablet: 'min-width: 699px';
-$desktop: 'min-width: 880px';
-$widescreen: 'min-width: 1200px';
+// Media queries.
+$mobile-up: 'min-width: 600px';
+$tablet-up: 'min-width: 699px';
+$desktop-up: 'min-width: 880px';
+$widescreen-up: 'min-width: 1200px';
 
+// Max content widths.
 $max-content-width: 1200px;
 $max-content-small-width: 680px;
 
+// Body padding.
 $body-padding-small: 16px;
 $body-padding-medium: 24px;
 $body-padding-large: 32px;
 
+// Fonts.
 $sans: 'IBM Plex Sans', sans-serif;
 $titles: 'DINNextLTPro-Regular', 'Din', sans-serif;

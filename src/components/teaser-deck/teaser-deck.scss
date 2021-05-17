@@ -1,14 +1,14 @@
 .teaser-deck {
   max-width: calc(#{$max-content-width} - 20px);
-  border: $body-padding-small solid $light-blue;
+  border: $body-padding-small solid $color-tertiary;
   margin: $body-padding-small 0;
-  @media ($tablet) {
+  @media ($tablet-up) {
     display: flex;
     margin: $body-padding-medium 0;
     align-items: center;
   }
-  @media ($desktop) {
-    border: 32px solid $light-blue;
+  @media ($desktop-up) {
+    border: 32px solid $color-tertiary;
     margin: $body-padding-large auto;
   }
 
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    @media ($mobile) {
+    @media ($mobile-up) {
       align-items: unset;
       text-align: left;
     }
@@ -28,7 +28,7 @@
 
   .teaser-deck__image-container {
     padding-bottom: 0;
-    @media ($tablet) {
+    @media ($tablet-up) {
       padding-bottom: 32px;
       width: 40%;
     }
@@ -37,14 +37,14 @@
       margin: 0 auto;
       width: 180px;
       height: auto;
-      @media ($tablet) {
+      @media ($tablet-up) {
         width: unset;
       }
     }
   }
 
   .teaser-deck__content {
-    @media ($tablet) {
+    @media ($tablet-up) {
       width: 60%;
     }
   }
@@ -52,10 +52,10 @@
   .teaser-deck__title {
     margin-bottom: 16px;
     font-size: 2.5rem;
-    @media ($mobile) {
+    @media ($mobile-up) {
       font-size: 3rem;
     }
-    @media ($tablet) {
+    @media ($tablet-up) {
       margin-bottom: 42px;
     }
   }
@@ -64,20 +64,20 @@
     margin-bottom: 24px;
     font-size: 1.25rem;
     line-height: 32px;
-    @media ($tablet) {
+    @media ($tablet-up) {
       font-size: 1.5rem;
       margin-bottom: 42px;
     }
   }
 
   .teaser-deck__button {
-    @media ($mobile) {
+    @media ($mobile-up) {
       margin-left: auto;
     }
   }
 }
 
 .teaser-deck--secondary {
-  border-color: $purple;
+  border-color: $color-secondary;
   flex-direction: row-reverse;
 }

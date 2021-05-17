@@ -1,12 +1,12 @@
 .footer {
   position: relative;
   height: 250px;
-  border-top: $purple 4px solid;
+  border-top: $color-secondary 4px solid;
   margin: 0 (-$body-padding-small);
-  @media ($tablet) {
+  @media ($tablet-up) {
     margin: 0 (-$body-padding-medium);
   }
-  @media ($desktop) {
+  @media ($desktop-up) {
     margin: 0 (-$body-padding-large);
   }
 
@@ -35,7 +35,7 @@
     transform: translateX(50%);
     height: 40px;
     text-decoration: none;
-    @media ($desktop) {
+    @media ($desktop-up) {
       right: 120px;
       top: 50%;
       transform: translateY(-50%);
@@ -45,7 +45,7 @@
     img {
       height: 40px;
       width: 80px;
-      @media ($desktop) {
+      @media ($desktop-up) {
         height: 50px;
         width: 100px;
       }
@@ -54,9 +54,9 @@
     span {
       position: relative;
       bottom: 3px;
-      border-bottom: 1px solid $purple;
+      border-bottom: 1px solid $color-secondary;
       font-size: .6875rem;
-      @media ($desktop) {
+      @media ($desktop-up) {
         font-size: .9375rem;
       }
     }

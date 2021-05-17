@@ -8,14 +8,14 @@
   .text-and-media__content {
     display: flex;
     flex-direction: column;
-    @media ($mobile) {
+    @media ($mobile-up) {
       flex-direction: row;
     }
 
     svg {
       flex-shrink: 0;
       margin: 0 auto 16px;
-      @media ($mobile) {
+      @media ($mobile-up) {
         margin: auto 32px auto 0;
       }
     }
