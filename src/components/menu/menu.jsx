@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Menu = () => (
-  <div className="menu">
+const Menu = ({ classNames }) => (
+  <div className={`menu${classNames}`}>
     <a href="/">Forside</a>
     <a href="/jeres-udvidede-web-afdeling">Konsulenter</a>
     <a href="/drupal">Drupal</a>

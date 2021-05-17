@@ -29,16 +29,4 @@
       }
     }
   }
-
-  &.menu-open {
-    circle {
-      opacity: 0;
-    }
-
-    @media (hover: hover) {
-      &:hover {
-        transform: translateX(-50%) scale(1.5) rotate(90deg);
-      }
-    }
-  }
 }

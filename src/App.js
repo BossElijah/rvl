@@ -14,10 +14,10 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      {showMenu && <Menu />}
+      <Menu classNames={showMenu ? ' menu--open' : ''} />
       <Hamburger showMenu={showMenu} onClick={() => setShowMenu(!showMenu)} />
       <Header />
-      {!showMenu && <Route component={Main} />}
+      <Route component={Main} />
       <Footer />
     </Router>
   );

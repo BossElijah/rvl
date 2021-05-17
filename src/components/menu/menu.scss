@@ -1,15 +1,16 @@
 .menu {
   position: fixed;
-  top: 0;
+  top: -100vh;
+  bottom: 100vh;
   right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 200;
+  z-index: 100;
   background: $darker-blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: scroll;
+  transition: top .5s, bottom .5s;
 
   a {
     display: block;
@@ -38,6 +39,23 @@
 
     &:last-of-type {
       margin-bottom: 50px;
+    }
+  }
+}
+
+.menu.menu--open {
+  top: 0;
+  bottom: 0;
+}
+
+.menu.menu--open + .hamburger {
+  circle {
+    fill: $darker-blue;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateX(-50%) scale(1.5) rotate(90deg);
     }
   }
 }

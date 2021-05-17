@@ -1,13 +1,13 @@
 .button {
   min-height: 45px;
   min-width: 240px;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   font-family: $sans;
   font-size: 1.125rem;
   padding: 16px;
   border-radius: 5px;
   text-decoration: none;
-  transition: color 0.25s, background-color 0.25s;
+  transition: color .25s, background-color .25s;
   display: flex;
   align-items: center;
   @media ($tablet) {
