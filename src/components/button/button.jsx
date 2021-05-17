@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Button = ({ buttonText, buttonUrl, icon, className, layout, aria }) => (
-  <a
+const Button = ({ text, url, icon, className, layout, aria }) => (
+  <Link
     aria-label={aria}
     className={`button ${className ? className : ''} ${
       layout ? 'button--' + layout : ''
     }`}
-    href={buttonUrl}
+    to={url}
   >
     {icon}
-    {buttonText}
-  </a>
+    {text}
+  </Link>
 );
 
 export default Button;
