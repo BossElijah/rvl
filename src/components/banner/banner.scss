@@ -18,15 +18,14 @@
     margin-bottom: 24px;
   }
 
-  .banner__text--main {
+  .banner__text {
     font-weight: 300;
-    font-style: italic;
     font-size: 1.5rem;
     line-height: 30px;
     margin-bottom: 24px;
-  }
 
-  .banner__text--customer {
-    font-size: 1.5rem;
+    &.text--italic {
+      font-style: italic;
+    }
   }
 }

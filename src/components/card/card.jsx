@@ -1,7 +1,15 @@
 import React from 'react';
 import Button from '../button/button';
 
-const Card = ({ img, title, text, buttonText, buttonUrl, buttonLayout, buttonAria }) => (
+const Card = ({
+  img,
+  title,
+  text,
+  buttonText,
+  buttonUrl,
+  buttonLayout,
+  buttonAria
+}) => (
   <div className="card">
     <img src={img} alt={title} />
     <div className="card__content">

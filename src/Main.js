@@ -70,8 +70,8 @@ const pages = {
       />
       <Banner
         title="Det siger vores kunder om os"
-        text="„Reveal IT's konsulent har gennem flere år hjulpet os med at implementere solide Drupal-løsninger indenfor en række komplekse forretningsområder. Vi har altid været ovenud tilfredse med samarbejdet. Vi har adgang til den absolut højeste kvalitet på Drupal-området, og vi betaler kun for den tid, som vi har brug for. Det er en model, der fungerer rigtig godt for os.”"
-        person="Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet"
+        content="„Reveal IT's konsulent har gennem flere år hjulpet os med at implementere solide Drupal-løsninger indenfor en række komplekse forretningsområder. Vi har altid været ovenud tilfredse med samarbejdet. Vi har adgang til den absolut højeste kvalitet på Drupal-området, og vi betaler kun for den tid, som vi har brug for. Det er en model, der fungerer rigtig godt for os.”<span style='display: block; margin-top: 1rem; font-style: normal'>Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet</span>"
+        layout="italic"
       />
       <SectionTitle title="Det kan vi tilføje til dit projekt" />
       <TeaserList />
@@ -145,6 +145,11 @@ const pages = {
         image={<ManSittingAtDesk />}
         text="Vi er nemme at snakke med, og vi er vant til at finde løsninger, der dækker vores kunders behov. Vi laver kun så lange aftaler, som I ønsker, så det er risikofrit at prøve os af.<br/><br/>Ring +45 71 99 03 77, eller skriv og få en snak om, hvad I har brug for."
       />
+    </>
+  ),
+  '/testing': (
+    <>
+    <Hero title="This is the testing page" />
     </>
   )
 };
