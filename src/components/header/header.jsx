@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import RvlLogoSVG from '../../images/rvl-logo.svg';
 
 const Header = () => (
-  <div className="header">
-    <a href="/" aria-label="Home">
+  <section className="header">
+    <Link to="/" aria-label="Home">
       <RvlLogoSVG />
-    </a>
+    </Link>
     <div className="header__language-container">
-      <a href="/en">EN</a>
-      <a href="/">DA</a>
+      <Link to="/en">EN</Link>
+      <Link to="/">DA</Link>
     </div>
-  </div>
+  </section>
 );
 
 export default Header;

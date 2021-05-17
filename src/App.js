@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <Menu classNames={showMenu ? ' menu--open' : ''} />
+      <Menu setShowMenu={setShowMenu} showMenu={showMenu} classNames={showMenu ? ' menu--open' : ''} />
       <Hamburger showMenu={showMenu} onClick={() => setShowMenu(!showMenu)} />
       <Header />
       <Route component={Main} />
