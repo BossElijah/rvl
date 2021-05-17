@@ -6,7 +6,7 @@ import TelevizionSVG from '../../images/televizion.svg';
 import FolderSVG from '../../images/folder.svg';
 
 const TeaserList = () => (
-  <div className="teaser-list">
+  <section className="teaser-list">
     <TeaserItem
       icon={<SkillsSVG />}
       title="Faglig dygtighed"
@@ -27,7 +27,7 @@ const TeaserList = () => (
       title="Fokus"
       text="Vores fokus er kun webprogrammering, og kun inden for Drupal og React. Vi gør kun det vi er bedst til."
     />
-  </div>
+  </section>
 );
 
 export default TeaserList;

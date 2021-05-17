@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../card/card';
 
 const CardList = ({ buttonLayout }) => (
-  <div className="card-list">
+  <section className="card-list">
     <Card
       img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-09/businessman_drawing_a_graph.jpg?itok=Wxcb6dPp"
       title="Online-booking til hoteller"
@@ -31,7 +31,7 @@ const CardList = ({ buttonLayout }) => (
       buttonLayout={buttonLayout}
       buttonAria="Læs mere om vores web-konsulenter"
     />
-  </div>
+  </section>
 );
 
 export default CardList;

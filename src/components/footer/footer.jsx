@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <div className="footer">
+  <section className="footer">
     <div className="footer__content-wrapper">
       <div className="footer__contact-info">
         <p>+45 71 99 03 77</p>
@@ -16,7 +16,7 @@ const Footer = () => (
       &nbsp;
       <span>associate</span>
     </a>
-  </div>
+  </section>
 );
 
 export default Footer;

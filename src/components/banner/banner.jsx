@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from '../section-title/section-title';
 
 const Banner = ({ title, content, background, layout}) => (
-  <div style={{ background: background }} className="banner">
+  <section style={{ background: background }} className="banner">
     <div className="banner__content">
       <SectionTitle title={title} />
       <p
@@ -10,7 +10,7 @@ const Banner = ({ title, content, background, layout}) => (
         className={`banner__text${layout ? ' text--' + layout : ''}`}
       />
     </div>
-  </div>
+  </section>
 );
 
 export default Banner;

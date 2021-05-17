@@ -12,19 +12,15 @@ const Wysiwyg = ({
   buttonLayout,
   buttonAria
 }) => (
-  <div className={`wysiwyg${layout ? ` text-${layout}` : ''}`}>
+  <section className={`wysiwyg${layout ? ` text-${layout}` : ''}`}>
     {title && <SectionTitle title={title} />}
     {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
     {buttonUrl && (
-      <Button
-        buttonUrl={buttonUrl}
-        icon={buttonIcon}
-        buttonText={buttonText}
-        layout={buttonLayout}
-        aria={buttonAria}
-      />
+      <Button url={buttonUrl} layout={buttonLayout} aria={buttonAria}>
+        {buttonIcon} {buttonText}
+      </Button>
     )}
-  </div>
+  </section>
 );
 
 export default Wysiwyg;

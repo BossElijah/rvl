@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Button = ({ text, url, icon, className, layout, aria }) => (
+const Button = ({ text, url, icon, className, layout, aria, children }) => (
   <Link
     aria-label={aria}
     className={`button ${className ? className : ''} ${
@@ -9,8 +9,7 @@ const Button = ({ text, url, icon, className, layout, aria }) => (
     }`}
     to={url}
   >
-    {icon}
-    {text}
+    {children}
   </Link>
 );
 

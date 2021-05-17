@@ -16,12 +16,13 @@ const Card = ({
       <h3 className="card__title">{title}</h3>
       <p className="card__text">{text}</p>
       <Button
-        buttonUrl={buttonUrl}
+        url={buttonUrl}
         className="card__button"
-        buttonText={buttonText}
         layout={buttonLayout}
         aria={buttonAria}
-      />
+      >
+        {buttonText}
+      </Button>
     </div>
   </div>
 );

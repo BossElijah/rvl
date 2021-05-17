@@ -3,7 +3,7 @@ import TextAndMedia from '../text-and-media/text-and-media';
 import InputField from '../input-field/input-field';
 
 const ContactForm = ({ title, image, text }) => (
-  <div className="contact-form">
+  <section className="contact-form">
     <TextAndMedia title={title} image={image} text={text} />
     <InputField
       type="input"
@@ -26,7 +26,7 @@ const ContactForm = ({ title, image, text }) => (
     <button type="submit" className="button button--outline">
       Send besked
     </button>
-  </div>
+  </section>
 );
 
 export default ContactForm;
