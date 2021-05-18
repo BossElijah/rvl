@@ -1,8 +1,8 @@
 .teaser-item {
   padding: 32px 24px;
   border: 5px solid $color-secondary;
-  color: $color-tertiary;
   margin: $body-padding-small 0;
+  color: $color-tertiary;
   @media ($tablet-up) {
     width: calc(50% - #{$body-padding-medium / 2});
 
@@ -35,8 +35,8 @@
   }
 
   .teaser-item__title {
-    font-size: 1.5rem;
     margin-bottom: 16px;
+    font-size: 1.5rem;
     @media ($mobile-up) {
       font-size: 1.75rem;
     }
@@ -49,14 +49,14 @@
     font-size: 1.125rem;
     line-height: 24px;
     @media ($tablet-up) {
-      line-height: 32px;
       font-size: 1.25rem;
+      line-height: 32px;
     }
   }
 
   svg {
     height: 30px;
-    margin-right: 16px;
     margin-top: 2px;
+    margin-right: 16px;
   }
 }

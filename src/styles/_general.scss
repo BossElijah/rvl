@@ -6,11 +6,11 @@
 
 body {
   max-width: 100vw;
+  padding: 0 $body-padding-small;
   font-family: $sans;
   font-weight: 400;
   color: $color-text;
   background: $color-primary;
-  padding: 0 $body-padding-small;
 
   @media ($tablet-up) {
     padding: 0 $body-padding-medium;
@@ -46,8 +46,8 @@ a {
 }
 
 button {
-  background: none;
   border: none;
+  background: none;
   cursor: pointer;
 }
 

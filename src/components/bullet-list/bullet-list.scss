@@ -3,9 +3,9 @@
   width: 100%;
   padding: 16px;
   margin: 0 auto 32px;
-  list-style: none;
   color: $color-tertiary;
   border: 3px solid $color-secondary;
+  list-style: none;
 
   .bullet-list__item {
     position: relative;
@@ -13,9 +13,9 @@
 
     span {
       display: block;
+      padding-left: 35px;
       font-size: 1.5rem;
       font-weight: 700;
-      padding-left: 35px;
     }
   }
 

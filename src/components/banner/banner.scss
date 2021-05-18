@@ -1,7 +1,7 @@
 .banner {
-  background: $color-secondary;
-  margin: 0 (-$body-padding-small) 48px;
   padding: 32px;
+  margin: 0 (-$body-padding-small) 48px;
+  background: $color-secondary;
   @media ($tablet-up) {
     margin: 0 (-$body-padding-medium) 48px;
   }
@@ -19,10 +19,10 @@
   }
 
   .banner__text {
+    margin-bottom: 24px;
     font-weight: 200;
     font-size: 1.5rem;
     line-height: 35px;
-    margin-bottom: 24px;
 
     &.text--italic {
       font-style: italic;

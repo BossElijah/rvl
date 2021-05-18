@@ -1,25 +1,25 @@
 .card {
+  position: relative;
+  max-width: 350px;
   padding: $body-padding-small;
   border: 2px solid $color-tertiary;
   margin: $body-padding-small auto;
-  max-width: 350px;
-  position: relative;
 
   @media ($mobile-up) {
-    max-width: unset;
     display: flex;
+    max-width: unset;
     height: 350px;
   }
 
   @media ($tablet-up) {
-    margin: $body-padding-medium auto;
     padding: $body-padding-medium;
+    margin: $body-padding-medium auto;
   }
 
   @media ($desktop-up) {
+    display: block;
     height: unset;
     width: calc((100% / 3));
-    display: block;
     &:first-of-type {
       margin: 0 ($body-padding-large / 2) 0 0;
     }
@@ -57,8 +57,8 @@
   }
 
   .card__title {
-    font-size: 1.5rem;
     margin: 12px 0;
+    font-size: 1.5rem;
     text-align: center;
     @media ($mobile-up) {
       text-align: left;
@@ -69,9 +69,9 @@
   }
 
   .card__text {
+    margin-bottom: 88px;
     font-size: 1.25rem;
     font-weight: 200;
-    margin-bottom: 88px;
   }
 
   .card__button {
@@ -82,16 +82,16 @@
     justify-content: center;
     min-width: unset;
     @media ($mobile-up) {
-      width: 240px;
       left: unset;
+      width: 240px;
     }
     @media ($tablet-up) {
       bottom: $body-padding-medium;
       right: $body-padding-medium;
     }
     @media ($desktop-up) {
-      width: unset;
       left: $body-padding-medium;
+      width: unset;
     }
   }
 }

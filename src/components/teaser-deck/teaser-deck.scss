@@ -4,8 +4,8 @@
   margin: 0 0 $body-padding-small 0;
   @media ($tablet-up) {
     display: flex;
-    margin: 0 0 $body-padding-medium 0;
     align-items: center;
+    margin: 0 0 $body-padding-medium 0;
   }
   @media ($desktop-up) {
     border: 32px solid $color-tertiary;
@@ -14,11 +14,11 @@
 
   .teaser-deck__image-container,
   .teaser-deck__content {
-    padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 32px;
     text-align: center;
     @media ($mobile-up) {
       align-items: unset;
@@ -29,8 +29,8 @@
   .teaser-deck__image-container {
     padding-bottom: 0;
     @media ($tablet-up) {
-      padding-bottom: 32px;
       width: 40%;
+      padding-bottom: 32px;
     }
 
     svg {
@@ -78,6 +78,6 @@
 }
 
 .teaser-deck--secondary {
-  border-color: $color-secondary;
   flex-direction: row-reverse;
+  border-color: $color-secondary;
 }

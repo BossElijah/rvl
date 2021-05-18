@@ -1,9 +1,9 @@
 .header {
   position: absolute;
+  z-index: 99;
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  z-index: 99;
   padding: 24px;
   margin: 0 (-$body-padding-small);
   @media ($tablet-up) {
@@ -36,10 +36,10 @@
 
     a {
       display: block;
-      text-decoration: none;
-      font-size: 1.375rem;
-      transition: transform .25s, color .25s;
       padding: 6px;
+      font-size: 1.375rem;
+      text-decoration: none;
+      transition: transform .25s, color .25s;
 
       @media ($desktop-up) {
         padding: unset;
@@ -47,8 +47,8 @@
 
       @media (hover: hover) {
         &:hover {
-          color: $color-tertiary;
           transform: scale(1.5);
+          color: $color-tertiary;
         }
       }
     }
