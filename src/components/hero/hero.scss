@@ -2,10 +2,10 @@
   position: relative;
   margin: 0 (-$body-padding-small) 48px;
   @media ($tablet-up) {
-    margin: 0 (-$body-padding-medium);
+    margin: 0 (-$body-padding-medium) 48px;
   }
   @media ($desktop-up) {
-    margin: 0 (-$body-padding-large);
+    margin: 0 (-$body-padding-large) 64px;
   }
 
   .hero__background-image {

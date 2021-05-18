@@ -1,15 +1,15 @@
 .teaser-deck {
   max-width: calc(#{$max-content-width} - 20px);
   border: $body-padding-small solid $color-tertiary;
-  margin: $body-padding-small 0;
+  margin: 0 0 $body-padding-small 0;
   @media ($tablet-up) {
     display: flex;
-    margin: $body-padding-medium 0;
+    margin: 0 0 $body-padding-medium 0;
     align-items: center;
   }
   @media ($desktop-up) {
     border: 32px solid $color-tertiary;
-    margin: $body-padding-large auto;
+    margin: 0 0 $body-padding-large auto;
   }
 
   .teaser-deck__image-container,
