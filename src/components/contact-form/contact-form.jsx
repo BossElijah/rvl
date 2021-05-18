@@ -6,22 +6,19 @@ const ContactForm = ({ title, image, text }) => (
   <section className="contact-form">
     <TextAndMedia title={title} image={image} text={text} />
     <InputField
-      type="input"
       name="name"
       placeholder="Dit fulde navn..."
       require
     />
     <InputField
-      type="input"
       name="email"
       placeholder="Din email adresse..."
       require
     />
-    <InputField
-      type="textarea"
+    <textarea
       name="text"
-      placeholder="Din besked..."
-      require
+      className="input-field"
+      placeholder="Din besked...  *"
     />
     <button type="submit" className="button button--outline">
       Send besked
