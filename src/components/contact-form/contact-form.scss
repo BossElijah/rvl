@@ -7,9 +7,11 @@
     font-weight: 400;
     border: 3px solid $color-secondary;
 
-    &:hover {
-      background: $color-secondary;
-      color: $color-text;
+    @media (hover: hover) {
+      &:hover {
+        background: $color-secondary;
+        color: $color-text;
+      }
     }
   }
 }
