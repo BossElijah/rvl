@@ -117,7 +117,42 @@ const pages = {
         text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React"
         layout="center"
       />
-      <CardList buttonLayout="outline" />
+      <CardList
+        cards={[
+          {
+            id: 1,
+            img:
+              process.env.PUBLIC_URL +
+              '/images/businessman_drawing_a_graph.jpeg',
+            title: 'Online-booking til hoteller',
+            text: 'Vi har specialiseret os i at udvikle bookingløsninger til hotelbranchen, hvor vi integrerer hotellets hjemmeside og PMS.',
+            buttonUrl: '/online-booking-system-hotel',
+            buttonText: 'Læs mere',
+            buttonLayout: 'outline',
+            buttonAria: 'Læs mere om online booking til hoteller'
+          },
+          {
+            id: 2,
+            img: process.env.PUBLIC_URL + '/images/keyboard.jpeg',
+            title: 'Artikler',
+            text: "Læs artikler skrevet af Reveal IT's konsulenter om opgradering af Drupal, open source-bevægelsen, Drupal som headless CMS m.m.",
+            buttonUrl: '/artikler',
+            buttonText: 'Læs mere',
+            buttonLayout: 'outline',
+            buttonAria: 'Læs mere om alle vores artikler'
+          },
+          {
+            id: 3,
+            img: process.env.PUBLIC_URL + '/images/solving_problems.png',
+            title: 'Web-konsulenter',
+            text: 'Der er stor efterspørgsel på Drupal- og React-udviklere. Læs mere om, hvordan Reveal IT griber et konsulent-samarbejde an.',
+            buttonUrl: '/jeres-udvidede-web-afdeling',
+            buttonText: 'Læs mere',
+            buttonLayout: 'outline',
+            buttonAria: 'Læs mere om vores web-konsulenter'
+          }
+        ]}
+      />
     </>
   ),
   '/jeres-udvidede-web-afdeling': (
