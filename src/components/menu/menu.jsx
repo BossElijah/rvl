@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Menu = ({ showMenu, setShowMenu }) => (
-  <div className={`menu ${showMenu ? ' menu--open' : ''}`}>
+  <div className={`menu${showMenu ? ' menu--open' : ''}`}>
     <Link onClick={() => setShowMenu(!showMenu)} to="/">
       Forside
     </Link>

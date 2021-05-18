@@ -11,10 +11,20 @@ import './styles/styles.scss';
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  if (showMenu) {
+    document.querySelector('body').style.overflow = 'hidden';
+  } else {
+    document.querySelector('body').style.overflow = 'scroll';
+  }
+
   return (
     <Router>
       <ScrollToTop />
-      <Menu setShowMenu={setShowMenu} showMenu={showMenu} classNames={showMenu ? ' menu--open' : ''} />
+      <Menu
+        setShowMenu={setShowMenu}
+        showMenu={showMenu}
+        classNames={showMenu ? ' menu--open' : ''}
+      />
       <Hamburger showMenu={showMenu} onClick={() => setShowMenu(!showMenu)} />
       <Header />
       <Route component={Main} />
