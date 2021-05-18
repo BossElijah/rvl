@@ -14,7 +14,7 @@ const TeaserDeck = ({
   <section className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser-deck__image-container">{img}</div>
     <div className="teaser-deck__content">
-    <TextWithButton
+      <TextWithButton
         title={title}
         titleClassname="teaser-deck__title"
         text={text}

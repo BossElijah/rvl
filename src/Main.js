@@ -90,25 +90,29 @@ const pages = {
             id: 1,
             icon: <SkillsSVG />,
             title: 'Faglig dygtighed',
-            text: 'Vi leverer gennemtestet og holdbar kode, som overholder best practice og kodestandarder.'
+            text:
+              'Vi leverer gennemtestet og holdbar kode, som overholder best practice og kodestandarder.'
           },
           {
             id: 2,
             icon: <BrainSVG />,
             title: 'Effektivitet',
-            text: 'Vi lever af at skabe værdi for vores kunder gennem at være effektive og løse opgaven rigtigt første gang.'
+            text:
+              'Vi lever af at skabe værdi for vores kunder gennem at være effektive og løse opgaven rigtigt første gang.'
           },
           {
             id: 3,
             icon: <TelevizionSVG />,
             title: 'Styring',
-            text: 'Lad os tage hånd om planlægning og udførelse, så jeres site bliver færdig til tiden og inden for budget.'
+            text:
+              'Lad os tage hånd om planlægning og udførelse, så jeres site bliver færdig til tiden og inden for budget.'
           },
           {
             id: 4,
             icon: <FolderSVG />,
             title: 'Fokus',
-            text: 'Vores fokus er kun webprogrammering, og kun inden for Drupal og React. Vi gør kun det vi er bedst til.'
+            text:
+              'Vores fokus er kun webprogrammering, og kun inden for Drupal og React. Vi gør kun det vi er bedst til.'
           }
         ]}
       />
@@ -125,7 +129,8 @@ const pages = {
               process.env.PUBLIC_URL +
               '/images/businessman_drawing_a_graph.jpeg',
             title: 'Online-booking til hoteller',
-            text: 'Vi har specialiseret os i at udvikle bookingløsninger til hotelbranchen, hvor vi integrerer hotellets hjemmeside og PMS.',
+            text:
+              'Vi har specialiseret os i at udvikle bookingløsninger til hotelbranchen, hvor vi integrerer hotellets hjemmeside og PMS.',
             buttonUrl: '/online-booking-system-hotel',
             buttonText: 'Læs mere',
             buttonLayout: 'outline',
@@ -135,7 +140,8 @@ const pages = {
             id: 2,
             img: process.env.PUBLIC_URL + '/images/keyboard.jpeg',
             title: 'Artikler',
-            text: "Læs artikler skrevet af Reveal IT's konsulenter om opgradering af Drupal, open source-bevægelsen, Drupal som headless CMS m.m.",
+            text:
+              "Læs artikler skrevet af Reveal IT's konsulenter om opgradering af Drupal, open source-bevægelsen, Drupal som headless CMS m.m.",
             buttonUrl: '/artikler',
             buttonText: 'Læs mere',
             buttonLayout: 'outline',
@@ -145,7 +151,8 @@ const pages = {
             id: 3,
             img: process.env.PUBLIC_URL + '/images/solving_problems.png',
             title: 'Web-konsulenter',
-            text: 'Der er stor efterspørgsel på Drupal- og React-udviklere. Læs mere om, hvordan Reveal IT griber et konsulent-samarbejde an.',
+            text:
+              'Der er stor efterspørgsel på Drupal- og React-udviklere. Læs mere om, hvordan Reveal IT griber et konsulent-samarbejde an.',
             buttonUrl: '/jeres-udvidede-web-afdeling',
             buttonText: 'Læs mere',
             buttonLayout: 'outline',
