@@ -1,6 +1,5 @@
 import React from 'react';
 import TextWithButton from '../text-with-button/text-with-button';
-import Button from '../button/button';
 
 const TeaserDeck = ({
   img,

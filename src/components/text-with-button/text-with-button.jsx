@@ -14,7 +14,7 @@ const TextWithButton = ({
   buttonClassname
 }) => (
   <>
-    <h3 className={titleClassname}>{title}</h3>
+    <h2 className={titleClassname}>{title}</h2>
     <p className={textClassname}>{text}</p>
     <Button
       className={buttonClassname}

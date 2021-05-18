@@ -8,6 +8,7 @@
   @media ($mobile-up) {
     max-width: unset;
     display: flex;
+    height: 350px;
   }
 
   @media ($tablet-up) {
@@ -16,6 +17,7 @@
   }
 
   @media ($desktop-up) {
+    height: unset;
     width: calc((100% / 3));
     display: block;
     &:first-of-type {

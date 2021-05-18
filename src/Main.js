@@ -74,7 +74,7 @@ const pages = {
       />
       <Banner
         title="Det siger vores kunder om os"
-        content="„Reveal IT's konsulent har gennem flere år hjulpet os med at implementere solide Drupal-løsninger indenfor en række komplekse forretningsområder. Vi har altid været ovenud tilfredse med samarbejdet. Vi har adgang til den absolut højeste kvalitet på Drupal-området, og vi betaler kun for den tid, som vi har brug for. Det er en model, der fungerer rigtig godt for os.”<span style='display: block; margin-top: 1rem; font-style: normal'>Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet</span>"
+        content="„Reveal IT's konsulent har gennem flere år hjulpet os med at implementere solide Drupal-løsninger indenfor en række komplekse forretningsområder. Vi har altid været ovenud tilfredse med samarbejdet. Vi har adgang til den absolut højeste kvalitet på Drupal-området, og vi betaler kun for den tid, som vi har brug for. Det er en model, der fungerer rigtig godt for os.”<span style='display: block; margin-top: 1rem; font-style: normal;font-weight: 400;'>Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet</span>"
         layout="italic"
       />
       <SectionTitle title="Det kan vi tilføje til dit projekt" />
@@ -161,10 +161,19 @@ const pages = {
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
   if (pathname) return pathname;
-  return <><PageTitle title="404" /><p style={{
-    textAlign: 'center',
-    fontSize: '3rem'
-  }}>Side ikke fundet</p></>;
+  return (
+    <>
+      <PageTitle title="404" />
+      <p
+        style={{
+          textAlign: 'center',
+          fontSize: '3rem'
+        }}
+      >
+        Side ikke fundet
+      </p>
+    </>
+  );
 };
 
 export default Main;

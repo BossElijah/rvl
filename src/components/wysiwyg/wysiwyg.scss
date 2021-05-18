@@ -11,7 +11,7 @@
 
   p {
     margin-bottom: 32px;
-    font-size: 1.25rem;
+    font-size: 1.3125rem;
     line-height: 30px;
   }
 
@@ -22,6 +22,15 @@
 
   .button {
     max-width: 240px;
+    @media ($mobile-up) {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @media ($desktop-up) {
+     position: unset;
+     transform: none;
+    }
   }
 
   &.text-center * {

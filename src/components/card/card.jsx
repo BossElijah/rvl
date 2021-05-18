@@ -1,6 +1,5 @@
 import React from 'react';
 import TextWithButton from '../text-with-button/text-with-button';
-import Button from '../button/button';
 
 const Card = ({
   img,
@@ -25,16 +24,6 @@ const Card = ({
         buttonAria={buttonAria}
         buttonClassname="card__button"
       />
-      {/* <h3 className="card__title">{title}</h3> */}
-      {/* <p className="card__text">{text}</p> */}
-      {/* <Button
-        url={buttonUrl}
-        className="card__button"
-        layout={buttonLayout}
-        aria={buttonAria}
-      >
-        {buttonText}
-      </Button> */}
     </div>
   </div>
 );
