@@ -10,7 +10,7 @@ const Footer = () => (
     </div>
     <a href="https://digitalist.global" className="footer__partner-container">
       <img
-        src="https://1tf4c53zz50h1rzp3y2z0ejc-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/Digitalist_Logotype_White-RGB-300x146.png"
+        src={process.env.PUBLIC_URL + '/images/digitalist_logo.png'}
         alt="Digitalist"
       />
       &nbsp;

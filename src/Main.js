@@ -28,7 +28,10 @@ const pages = {
       <Hero
         title="Drupal + React Specialister"
         logo={<RvlLogoTextSVG />}
-        backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-08/background-bit-bytes-2004161-web.jpg?itok=hTmNsRrh"
+        backgroundImg={
+          process.env.PUBLIC_URL +
+          '/images/background-bit-bytes-2004161-web.jpeg'
+        }
       />
       <TeaserDeck
         img={<DrupalBigSVG />}
@@ -91,7 +94,9 @@ const pages = {
     <>
       <Hero
         logo={<DrupalThinkReactSVG />}
-        backgroundImg="https://editor.revealit.dk/sites/default/files/styles/background_image_1920w/public/2019-09/code-coder-codes-2194062.jpg?itok=_QgYaCOD"
+        backgroundImg={
+          process.env.PUBLIC_URL + '/images/code-coder-codes-2194062.jpeg'
+        }
       />
       <PageTitle title="Jeres udvidede web-afdeling" />
       <BulletListContainer

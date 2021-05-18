@@ -4,7 +4,7 @@ import Card from '../card/card';
 const CardList = ({ buttonLayout }) => (
   <section className="card-list">
     <Card
-      img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-09/businessman_drawing_a_graph.jpg?itok=Wxcb6dPp"
+      img={process.env.PUBLIC_URL + '/images/businessman_drawing_a_graph.jpeg'}
       title="Online-booking til hoteller"
       text="Vi har specialiseret os i at udvikle bookingløsninger til hotelbranchen, hvor vi integrerer hotellets hjemmeside og PMS."
       buttonUrl="/online-booking-system-hotel"
@@ -13,7 +13,7 @@ const CardList = ({ buttonLayout }) => (
       buttonAria="Læs mere om online booking til hoteller"
     />
     <Card
-      img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-09/keyboard.jpeg?itok=SsBWLbij"
+      img={process.env.PUBLIC_URL + '/images/keyboard.jpeg'}
       title="Artikler"
       text="Læs artikler skrevet af Reveal IT's konsulenter om opgradering af Drupal, open source-bevægelsen, Drupal som headless CMS m.m."
       buttonUrl="/artikler"
@@ -23,7 +23,7 @@ const CardList = ({ buttonLayout }) => (
     />
 
     <Card
-      img="https://editor.revealit.dk/sites/default/files/styles/scale_max_2560w/public/2019-08/solving_problems.png?itok=SiFso3F3"
+      img={process.env.PUBLIC_URL + '/images/solving_problems.png'}
       title="Web-konsulenter"
       text="Der er stor efterspørgsel på Drupal- og React-udviklere. Læs mere om, hvordan Reveal IT griber et konsulent-samarbejde an."
       buttonUrl="/jeres-udvidede-web-afdeling"
