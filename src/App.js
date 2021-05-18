@@ -14,7 +14,7 @@ const App = () => {
   if (showMenu) {
     document.querySelector('body').style.overflow = 'hidden';
   } else {
-    document.querySelector('body').style.overflow = 'scroll';
+    document.querySelector('body').style.overflow = 'unset';
   }
 
   return (
