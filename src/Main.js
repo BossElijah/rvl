@@ -18,6 +18,9 @@ import DrupalBigSVG from './images/drupal-big.svg';
 import ReactSVG from './images/react.svg';
 import ReactBigSVG from './images/react-big.svg';
 import SkillsSVG from './images/skills.svg';
+import BrainSVG from './images/brain.svg';
+import TelevizionSVG from './images/televizion.svg';
+import FolderSVG from './images/folder.svg';
 import RvlLogoTextSVG from './images/rvl-logo-text.svg';
 import DrupalThinkReactSVG from './images/drupal-think-react.svg';
 import ManSittingAtDesk from './images/man-sitting-desk.svg';
@@ -81,7 +84,34 @@ const pages = {
         layout="italic"
       />
       <SectionTitle title="Det kan vi tilføje til dit projekt" />
-      <TeaserList />
+      <TeaserList
+        teasers={[
+          {
+            id: 1,
+            icon: <SkillsSVG />,
+            title: 'Faglig dygtighed',
+            text: 'Vi leverer gennemtestet og holdbar kode, som overholder best practice og kodestandarder.'
+          },
+          {
+            id: 2,
+            icon: <BrainSVG />,
+            title: 'Effektivitet',
+            text: 'Vi lever af at skabe værdi for vores kunder gennem at være effektive og løse opgaven rigtigt første gang.'
+          },
+          {
+            id: 3,
+            icon: <TelevizionSVG />,
+            title: 'Styring',
+            text: 'Lad os tage hånd om planlægning og udførelse, så jeres site bliver færdig til tiden og inden for budget.'
+          },
+          {
+            id: 4,
+            icon: <FolderSVG />,
+            title: 'Fokus',
+            text: 'Vores fokus er kun webprogrammering, og kun inden for Drupal og React. Vi gør kun det vi er bedst til.'
+          }
+        ]}
+      />
       <Wysiwyg
         title="Hvorfor vælge Reveal IT?"
         text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React"
