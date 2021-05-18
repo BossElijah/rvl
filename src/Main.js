@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components.
 import Hero from './components/hero/hero';
 import TeaserDeck from './components/teaser-deck/teaser-deck';
 import PageTitle from './components/page-title/page-title';
@@ -9,6 +11,8 @@ import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
 import CardList from './components/card-list/card-list';
 import ContactForm from './components/contact-form/contact-form';
+
+// SVGs.
 import DrupalSVG from './images/drupal-white.svg';
 import DrupalBigSVG from './images/drupal-big.svg';
 import ReactSVG from './images/react.svg';
@@ -149,7 +153,7 @@ const pages = {
   ),
   '/testing': (
     <>
-    <Hero title="This is the testing page" />
+      <Hero title="This is the testing page" />
     </>
   )
 };
@@ -157,7 +161,10 @@ const pages = {
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
   if (pathname) return pathname;
-  return <PageTitle title="404 Page Not Found!" />;
+  return <><PageTitle title="404" /><p style={{
+    textAlign: 'center',
+    fontSize: '3rem'
+  }}>Side ikke fundet</p></>;
 };
 
 export default Main;

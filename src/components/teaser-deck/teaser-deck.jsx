@@ -1,4 +1,5 @@
 import React from 'react';
+import TextWithButton from '../text-with-button/text-with-button';
 import Button from '../button/button';
 
 const TeaserDeck = ({
@@ -14,15 +15,17 @@ const TeaserDeck = ({
   <section className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser-deck__image-container">{img}</div>
     <div className="teaser-deck__content">
-      <h2 className="teaser-deck__title">{title}</h2>
-      <p className="teaser-deck__text">{text}</p>
-      <Button
-        url={buttonUrl}
-        className="teaser-deck__button"
-        layout={buttonLayout}
-      >
-        {buttonIcon} {buttonText}
-      </Button>
+    <TextWithButton
+        title={title}
+        titleClassname="teaser-deck__title"
+        text={text}
+        textClassname="teaser-deck__text"
+        buttonLayout={buttonLayout}
+        buttonUrl={buttonUrl}
+        buttonText={buttonText}
+        buttonClassname="teaser-deck__button"
+        buttonIcon={buttonIcon}
+      />
     </div>
   </section>
 );

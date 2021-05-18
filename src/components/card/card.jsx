@@ -1,4 +1,5 @@
 import React from 'react';
+import TextWithButton from '../text-with-button/text-with-button';
 import Button from '../button/button';
 
 const Card = ({
@@ -13,16 +14,27 @@ const Card = ({
   <div className="card">
     <img src={img} alt={title} />
     <div className="card__content">
-      <h3 className="card__title">{title}</h3>
-      <p className="card__text">{text}</p>
-      <Button
+      <TextWithButton
+        title={title}
+        titleClassname="card__title"
+        text={text}
+        textClassname="card__text"
+        buttonLayout={buttonLayout}
+        buttonUrl={buttonUrl}
+        buttonText={buttonText}
+        buttonAria={buttonAria}
+        buttonClassname="card__button"
+      />
+      {/* <h3 className="card__title">{title}</h3> */}
+      {/* <p className="card__text">{text}</p> */}
+      {/* <Button
         url={buttonUrl}
         className="card__button"
         layout={buttonLayout}
         aria={buttonAria}
       >
         {buttonText}
-      </Button>
+      </Button> */}
     </div>
   </div>
 );
