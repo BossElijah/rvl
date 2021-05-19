@@ -10,21 +10,21 @@
 
   .hero__background-image {
     min-height: 350px;
-    height: 30vh;
+    padding: 35% 0;
     background: $color-hero-filter;
     background-size: cover;
     background-blend-mode: soft-light;
 
     @media ($tablet-up) {
-      height: 50vh;
+      padding: 27% 0;
     }
 
     @media ($desktop-up) {
-      height: 60vh;
+      padding: 26% 0;
     }
 
     @media ($widescreen-up) {
-      height: 70vh;
+      padding: 19% 0;
     }
   }
 
