@@ -3,8 +3,8 @@ import TeaserItem from '../teaser-item/teaser-item';
 
 const TeaserList = ({ teasers }) => (
   <section className="teaser-list">
-    {teasers.map(({ icon, title, text, id }) => (
-      <TeaserItem key={id} icon={icon} title={title} text={text} />
+    {teasers.map(item => (
+      <TeaserItem key={item.id} {...item} />
     ))}
   </section>
 );
