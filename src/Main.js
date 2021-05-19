@@ -48,19 +48,7 @@ const Main = ({ location }) => {
       <Deck key={index} type={deck.type} {...deck} />
     ));
   }
-  return (
-    <>
-      <PageTitle title="404" />
-      <p
-        style={{
-          textAlign: 'center',
-          fontSize: '3rem'
-        }}
-      >
-        Side ikke fundet
-      </p>
-    </>
-  );
+  return <NotFound />;
 };
 
 export default Main;
