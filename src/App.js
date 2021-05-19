@@ -24,7 +24,6 @@ const App = () => {
       <Menu
         setShowMenu={setShowMenu}
         showMenu={showMenu}
-        classNames={showMenu ? ' menu--open' : ''}
       />
       <Header />
       <Route component={Main} />
