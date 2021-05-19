@@ -11,10 +11,6 @@
     top: 15px;
   }
 
-  &:focus-visible {
-    outline: none;
-  }
-
   .circle {
     opacity: 1;
     transition: opacity .25s ease-in-out;
