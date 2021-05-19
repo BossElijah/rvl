@@ -9,6 +9,7 @@ import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
 import CardList from './components/card-list/card-list';
 import ContactForm from './components/contact-form/contact-form';
+import NotFound from './components/not-found/not-found'; 
 
 const Deck = ({ type, ...props }) => {
   const deckMap = {
