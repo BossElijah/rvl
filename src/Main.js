@@ -11,6 +11,7 @@ import Banner from './components/banner/banner';
 import TeaserList from './components/teaser-list/teaser-list';
 import CardList from './components/card-list/card-list';
 import ContactForm from './components/contact-form/contact-form';
+import NotFound from './components/not-found/not-found';
 
 // SVGs.
 import DrupalSVG from './images/drupal-white.svg';
@@ -231,19 +232,7 @@ const pages = {
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
   if (pathname) return pathname;
-  return (
-    <>
-      <PageTitle title="404" />
-      <p
-        style={{
-          textAlign: 'center',
-          fontSize: '3rem'
-        }}
-      >
-        Side ikke fundet
-      </p>
-    </>
-  );
+  return <NotFound />;
 };
 
 export default Main;
