@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'DIN Next LT Pro';
+  src: local('DIN Next LT Pro Regular'), local('DIN-Next-LT-Pro-Regular'),
+    url('../fonts/Din-Next-LT-Pro/DINNextLTPro-Regular.woff2') format('woff2'),
+    url('../fonts/Din-Next-LT-Pro/DINNextLTPro-Regular.woff') format('woff'),
+    url('../fonts/Din-Next-LT-Pro/DINNextLTPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+}
