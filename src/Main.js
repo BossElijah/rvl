@@ -180,7 +180,7 @@ const pages = {
         ]}
       />
       <Wysiwyg
-        title="Fleksible konsulenter der leverer varen"
+        title="Fleksible konsulenter der leverer varen" 
         text="Alle som har arbejdet med IT kender faldgruberne: dyre, langstrakte projekter uden et klart mål i sigte, kode der ender med at skulle skrives om, ressourcer der spildes på ingenting.<br/><br/>Vi tilbyder Drupal- og React-konsulenter, som kan gå lige ind i jeres team og levere kvalitet med det samme. Vi har konsulenter på alle niveauer og inden for alle discipliner, så vi kan hjælpe med enhver Drupal- og React-opgave.<br/><br/>Vores konsulenter kan arbejde på fuld tid eller mindre, og projekterne kan have en varighed fra få uger til måneder eller flere år. Vi tilpasser os jeres behov.<br/><br/>Vores konsulenter kan indgå i store projektteams som ekstra ressourcer, som udviklere, designere eller arkitekter på alle niveauer, til en pris, der giver mere value for money end at ansætte en ekstra medarbejder selv – ikke mindst hvis der er brug for noget ekstra i en periode. Eller vi kan være jeres permanente web-udviklingsteam og sørge for det hele."
       />
       <Wysiwyg
