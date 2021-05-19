@@ -20,12 +20,12 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
+      <Hamburger showMenu={showMenu} onClick={() => setShowMenu(!showMenu)} />
       <Menu
         setShowMenu={setShowMenu}
         showMenu={showMenu}
         classNames={showMenu ? ' menu--open' : ''}
       />
-      <Hamburger showMenu={showMenu} onClick={() => setShowMenu(!showMenu)} />
       <Header />
       <Route component={Main} />
       <Footer />
