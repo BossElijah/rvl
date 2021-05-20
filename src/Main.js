@@ -231,7 +231,7 @@ const pages = {
 
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
-  if (pathname) return pathname;
+  if (pathname) return <main role="main">{pathname}</main>;
   return <NotFound />;
 };
 
