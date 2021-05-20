@@ -22,8 +22,11 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <Header showMenu={showMenu} hamburgerOnClick={() => setShowMenu(!showMenu)} />
-      <Menu setShowMenu={setShowMenu} showMenu={showMenu} />
+      <Header
+        showMenu={showMenu}
+        hamburgerOnClick={() => setShowMenu(!showMenu)}
+      />
+      <Menu onClick={() => setShowMenu(!showMenu)} showMenu={showMenu} />
       <Route component={Main} />
       <Footer showMenu={showMenu} />
     </Router>

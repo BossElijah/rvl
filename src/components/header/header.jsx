@@ -1,19 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Hamburger from '../hamburger/hamburger'
+import Hamburger from '../hamburger/hamburger';
 import RvlLogoSVG from '../../images/rvl-logo.svg';
 
-const Header = ({showMenu, hamburgerOnClick}) => (
+const Header = ({ showMenu, hamburgerOnClick }) => (
   <header className="header">
-    <Link to="/" aria-label="Home" className={`${showMenu ? 'visibility-hidden' : ''}`}>
+    <Link
+      to="/"
+      aria-label="Home"
+      className={`${showMenu ? 'visibility-hidden' : ''}`}
+    >
       <RvlLogoSVG />
     </Link>
-    <Hamburger id="hamburger-top" showMenu={showMenu} onClick={hamburgerOnClick} />
-    <div className={`header__language-container${showMenu ? ' visibility-hidden' : ''}`}>
-      <Link aria-label="View the site in English" to="/en">EN</Link>
-      <Link aria-label="Se siden på Dansk" to="/">DA</Link>
+    <Hamburger
+      id="hamburger-top"
+      showMenu={showMenu}
+      onClick={hamburgerOnClick}
+    />
+    <div
+      className={`header__language-container${
+        showMenu ? ' visibility-hidden' : ''
+      }`}
+    >
+      <Link aria-label="View the site in English" to="/en">
+        EN
+      </Link>
+      <Link aria-label="Se siden på Dansk" to="/">
+        DA
+      </Link>
     </div>
-    <Hamburger id="hamburger-bottom" showMenu={showMenu} onClick={hamburgerOnClick} />
+    <Hamburger
+      id="hamburger-bottom"
+      showMenu={showMenu}
+      onClick={hamburgerOnClick}
+    />
   </header>
 );
 
