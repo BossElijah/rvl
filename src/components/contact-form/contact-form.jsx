@@ -2,10 +2,10 @@ import React from 'react';
 import TextAndMedia from '../text-and-media/text-and-media';
 import InputField from '../input-field/input-field';
 
-const ContactForm = ({ title, image, text }) => (
+const ContactForm = props => (
   <section className="contact-form">
-    <TextAndMedia title={title} image={image} text={text} />
     <form>
+      <TextAndMedia {...props} />
       <InputField name="name" placeholder="Dit fulde navn..." require />
       <InputField name="email" placeholder="Din email adresse..." require />
       <textarea

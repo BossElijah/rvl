@@ -11,7 +11,7 @@ const Card = ({
   buttonAria
 }) => (
   <div className="card">
-    <img src={img} alt={title} />
+    <img src={img} alt="" />
     <div className="card__content">
       <TextWithButton
         title={title}

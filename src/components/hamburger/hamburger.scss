@@ -29,4 +29,29 @@
       }
     }
   }
+
+  &.menu--open {
+    circle {
+      fill: $color-primary--dark;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        transform: translateX(-50%) scale(1.5) rotate(90deg);
+      }
+    }
+  }
+}
+
+#hamburger-top {
+  display: none;
+  @media ($desktop-up) {
+    display: block;
+  }
+}
+
+#hamburger-bottom {
+  @media ($desktop-up) {
+    display: none;
+  }
 }

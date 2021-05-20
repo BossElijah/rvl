@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <section className="footer">
+  <footer className="footer">
     <div className="footer__content-wrapper">
       <div className="footer__contact-info">
         <p>+45 71 99 03 77</p>
@@ -11,12 +11,12 @@ const Footer = () => (
     <a href="https://digitalist.global" className="footer__partner-container">
       <img
         src={process.env.PUBLIC_URL + '/images/digitalist_logo.png'}
-        alt="Digitalist"
+        alt=""
       />
       &nbsp;
       <span>associate</span>
     </a>
-  </section>
+  </footer>
 );
 
 export default Footer;

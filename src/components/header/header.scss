@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -11,6 +11,10 @@
   }
   @media ($desktop-up) {
     margin: 0 (-$body-padding-large);
+  }
+
+  .visibility-hidden {
+    visibility: hidden;
   }
 
   .logo {
