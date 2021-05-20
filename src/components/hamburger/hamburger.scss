@@ -6,14 +6,14 @@
   z-index: 3;
   height: 80px;
   width: 80px;
-  transition: transform 0.25s ease;
+  transition: transform .25s ease;
   @media ($desktop-up) {
     top: 15px;
   }
 
   .circle {
     opacity: 1;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity .25s ease-in-out;
   }
 
   @media (hover: hover) {
@@ -40,5 +40,18 @@
         transform: translateX(-50%) scale(1.5) rotate(90deg);
       }
     }
+  }
+}
+
+#hamburger-top {
+  display: none;
+  @media ($desktop-up) {
+    display: block;
+  }
+}
+
+#hamburger-bottom {
+  @media ($desktop-up) {
+    display: none;
   }
 }
