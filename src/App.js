@@ -12,8 +12,11 @@ const App = () => {
 
   if (showMenu) {
     document.querySelector('body').style.overflow = 'hidden';
-  } else {
+    document.querySelector('main').style.visibility = 'hidden';
+    document.querySelector('main').style.transition = 'visibility .5s';
+  } else if (document.querySelector('main')) {
     document.querySelector('body').style.overflow = 'unset';
+    document.querySelector('main').style.visibility = 'unset';
   }
 
   return (
@@ -22,7 +25,7 @@ const App = () => {
       <Header showMenu={showMenu} hamburgerOnClick={() => setShowMenu(!showMenu)} />
       <Menu setShowMenu={setShowMenu} showMenu={showMenu} />
       <Route component={Main} />
-      <Footer />
+      <Footer showMenu={showMenu} />
     </Router>
   );
 };

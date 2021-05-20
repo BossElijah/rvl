@@ -13,9 +13,6 @@
   transform: translateY(-100%);
   transition: transform .5s, visibility .5s;
 
-  &.visibility-hidden {
-    visibility: hidden;
-  }
 
   a {
     display: block;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Footer = () => (
-  <footer className="footer">
+const Footer = ({ showMenu }) => (
+  <footer className={`footer${showMenu ? ' visibility-hidden' : ''}`}>
     <div className="footer__content-wrapper">
       <div className="footer__contact-info">
         <p>+45 71 99 03 77</p>
