@@ -4,8 +4,8 @@ import InputField from '../input-field/input-field';
 
 const ContactForm = props => (
   <section className="contact-form">
-    <TextAndMedia {...props} />
     <form>
+      <TextAndMedia {...props} />
       <InputField name="name" placeholder="Dit fulde navn..." require />
       <InputField name="email" placeholder="Din email adresse..." require />
       <textarea

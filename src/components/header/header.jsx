@@ -10,8 +10,8 @@ const Header = ({showMenu, hamburgerOnClick}) => (
     </Link>
     <Hamburger id="hamburger-top" showMenu={showMenu} onClick={hamburgerOnClick} />
     <div className={`header__language-container${showMenu ? ' visibility-hidden' : ''}`}>
-      <Link to="/en">EN</Link>
-      <Link to="/">DA</Link>
+      <Link aria-label="View the site in English" to="/en">EN</Link>
+      <Link aria-label="Se siden på Dansk" to="/">DA</Link>
     </div>
     <Hamburger id="hamburger-bottom" showMenu={showMenu} onClick={hamburgerOnClick} />
   </header>
