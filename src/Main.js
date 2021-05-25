@@ -44,9 +44,13 @@ const Main = ({ location }) => {
         .substring(0, pathname.length - 6)
         .replace(/-/g, ' ');
     document.title = `${pageTitle} | Reveal IT`;
-    return currentPage.decks.map((deck, index) => (
-      <Deck key={index} type={deck.type} {...deck} />
-    ));
+    return (
+      <main>
+        {currentPage.decks.map((deck, index) => (
+          <Deck key={index} type={deck.type} {...deck} />
+        ))}
+      </main>
+    );
   }
   return <NotFound />;
 };
