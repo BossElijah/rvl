@@ -45,14 +45,18 @@ const Main = ({ location }) => {
         .replace(/-/g, ' ');
     document.title = `${pageTitle} | Reveal IT`;
     return (
-      <main>
+      <main role="main">
         {currentPage.decks.map((deck, index) => (
           <Deck key={index} type={deck.type} {...deck} />
         ))}
       </main>
     );
   }
-  return <NotFound />;
+  return (
+    <main role="main">
+      <NotFound />
+    </main>
+  );
 };
 
 export default Main;
