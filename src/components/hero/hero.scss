@@ -34,14 +34,16 @@
   }
 
   .hero__content-container {
+    display: flex;
+    flex-direction: column;
     max-width: 1400px;
     width: 100%;
     padding: 32px;
     margin: auto;
   }
 
-  .hero__logo {
-    margin: 64px 0 48px 0;
+  svg {
+    margin: 64px auto 48px;
   }
 
   .hero__title {

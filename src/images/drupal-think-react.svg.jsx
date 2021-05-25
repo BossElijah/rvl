@@ -2,7 +2,6 @@ import React from 'react';
 
 const DrupalThinkReactSVG = () => (
   <svg
-    className="hero__logo"
     xmlns="http://www.w3.org/2000/svg"
     id="Layer_1"
     viewBox="0 0 626.1 457.6"
