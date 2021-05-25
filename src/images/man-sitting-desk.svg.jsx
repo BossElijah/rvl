@@ -8,7 +8,6 @@ const ManSittingAtDesk = () => (
     width="170"
   >
     <linearGradient
-      id="a"
       gradientTransform="matrix(.99903293 .04396812 -.04396812 .99903293 -157.219834 -176.880008)"
       gradientUnits="userSpaceOnUse"
       x1="378.58"
@@ -20,7 +19,6 @@ const ManSittingAtDesk = () => (
       <stop offset=".53" stopColor="#00adee" />
     </linearGradient>
     <linearGradient
-      id="b"
       gradientUnits="userSpaceOnUse"
       x1="496.22"
       x2="539.65"
