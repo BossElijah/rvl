@@ -228,11 +228,6 @@ const pages = {
         text="Vi er nemme at snakke med, og vi er vant til at finde løsninger, der dækker vores kunders behov. Vi laver kun så lange aftaler, som I ønsker, så det er risikofrit at prøve os af.<br/><br/>Ring +45 71 99 03 77, eller skriv og få en snak om, hvad I har brug for."
       />
     </>
-  ),
-  '/testing': (
-    <>
-      <Hero title="This is the testing page" />
-    </>
   )
 };
 
