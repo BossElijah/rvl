@@ -1,11 +1,7 @@
 import React from 'react';
 
 const RvlLogoSVG = () => (
-  <svg
-    className="logo"
-    viewBox="0 0 193.5 188"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg viewBox="0 0 193.5 188" xmlns="http://www.w3.org/2000/svg">
     <g
       fill="none"
       stroke="currentColor"

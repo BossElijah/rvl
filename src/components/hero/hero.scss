@@ -1,56 +1,52 @@
 .hero {
+      animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-836659534729542-1;
+
+
   display: flex;
-  margin: 0 (-$body-padding-small) 48px;
-  height: 350px;
+  position: relative;
+  margin: 0 (-$body-padding-small) 32px;
+  max-height: 720px;
+  min-height: 343px;
   @media ($tablet-up) {
-    height: 450px;
     margin: 0 (-$body-padding-medium) 48px;
   }
   @media ($desktop-up) {
-    height: 550px;
-    margin: 0 (-$body-padding-large) 64px;
-  }
-  @media ($widescreen-up) {
-    height: 650px;
+    height: 55vw;
+    margin: 0 (-$body-padding-large) 48px;
   }
 
   .hero__background-image {
     position: absolute;
     z-index: -1;
     width: 100%;
+    height: 100%;
     background: $color-hero-filter;
     background-size: cover;
     background-blend-mode: soft-light;
-    height: 350px;
-    @media ($tablet-up) {
-      height: 450px;
-    }
-    @media ($desktop-up) {
-      height: 550px;
-    }
-    @media ($widescreen-up) {
-      height: 650px;
-    }
   }
 
   .hero__content-container {
+    display: flex;
+    flex-direction: column;
     max-width: 1400px;
     width: 100%;
     padding: 32px;
     margin: auto;
   }
 
-  .hero__logo {
-    margin: 64px 0 48px 0;
+  svg {
+    margin: 64px auto 32px;
   }
 
   .hero__title {
     background: -webkit-linear-gradient($color-tertiary, #03475f);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 7vw;
-    @media ($tablet-up) {
-      font-size: 3.25rem;
-    }
+    font-size: calc(1rem + ((1vw - 0.01px) * 4));
   }
 }

@@ -16,7 +16,7 @@ const ContactForm = props => (
       <input
         type="submit"
         className="button button--outline"
-        value="Send Besked"
+        value="Send besked"
       />
     </form>
   </section>

@@ -8,7 +8,7 @@ const Header = ({ showMenu, hamburgerOnClick }) => (
     <Link
       to="/"
       aria-label="Home"
-      className={`${showMenu ? 'visibility-hidden' : ''}`}
+      className={`header__home${showMenu ? ' visibility-hidden' : ''}`}
     >
       <RvlLogoSVG />
     </Link>
