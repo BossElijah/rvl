@@ -239,7 +239,7 @@ const pages = {
 const Main = ({ location }) => {
   const pathname = pages[location.pathname];
   if (pathname) return <main role="main">{pathname}</main>;
-  return <NotFound />;
+  return <main role="main"><NotFound /></main>;
 };
 
 export default Main;
