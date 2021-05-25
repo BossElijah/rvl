@@ -7,7 +7,6 @@ const Hero = ({ title, logo, backgroundImg }) => (
       className="hero__background-image"
       style={{ backgroundImage: `url(${backgroundImg})` }}
     />
-    {/* <img className="hero__background-image" src={backgroundImg} alt="" /> */}
     <div className="hero__content-container">
       {logo}
       {title && <PageTitle className="hero__title" title={title} />}
