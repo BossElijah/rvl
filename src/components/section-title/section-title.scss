@@ -1,5 +1,5 @@
 .section-title {
   margin: 16px 0 32px;
-  font-size: 3rem;
+  font-size: calc(2.75rem + ((1vw - .01px) * .2084));
   text-align: center;
 }

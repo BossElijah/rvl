@@ -1,4 +1,12 @@
 .hero {
+      animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-836659534729542-1;
+
+
   display: flex;
   position: relative;
   margin: 0 (-$body-padding-small) 32px;
@@ -32,16 +40,13 @@
   }
 
   svg {
-    margin: 140px auto 32px;
+    margin: 64px auto 32px;
   }
 
   .hero__title {
     background: -webkit-linear-gradient($color-tertiary, #03475f);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 7vw;
-    @media ($tablet-up) {
-      font-size: 3.5rem;
-    }
+    font-size: calc(1rem + ((1vw - 0.01px) * 4));
   }
 }

@@ -1,5 +1,5 @@
 .page-title {
   margin-bottom: 24px;
-  font-size: 4rem;
+  font-size: calc(3rem + ((1vw - .01px) * 1.2507));
   text-align: center;
 }
