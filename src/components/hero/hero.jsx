@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTitle from '../page-title/page-title';
 
 const Hero = ({ title, logo, backgroundImg }) => (
   <section className="hero">
@@ -6,8 +7,10 @@ const Hero = ({ title, logo, backgroundImg }) => (
       className="hero__background-image"
       style={{ backgroundImage: `url(${backgroundImg})` }}
     />
-    {logo}
-    {title && <h1 className="hero__title">{title}</h1>}
+    <div className="hero__content-container">
+      {logo}
+      {title && <PageTitle className="hero__title" title={title} />}
+    </div>
   </section>
 );
 
