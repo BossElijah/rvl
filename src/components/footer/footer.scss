@@ -4,6 +4,7 @@
   border-top: $color-secondary 4px solid;
   margin: 0 (-$body-padding-small);
   @media ($tablet-up) {
+    height: 210px;
     margin: 0 (-$body-padding-medium);
   }
   @media ($desktop-up) {
@@ -60,5 +61,9 @@
         font-size: .9375rem;
       }
     }
+  }
+
+  &.visibility-hidden {
+    transition: visibility .5s;
   }
 }

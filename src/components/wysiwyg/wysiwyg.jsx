@@ -5,14 +5,14 @@ import Button from '../button/button';
 const Wysiwyg = ({
   title,
   text,
-  layout,
+  className,
   buttonIcon,
   buttonUrl,
   buttonText,
   buttonLayout,
   buttonAria
 }) => (
-  <section className={`wysiwyg${layout ? ` text-${layout}` : ''}`}>
+  <section className={className ? `wysiwyg ${className}` : 'wysiwyg'}>
     {title && <SectionTitle title={title} />}
     {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
     {buttonUrl && (

@@ -82,9 +82,9 @@ const pages = {
       <Banner
         title="Det siger vores kunder om os"
         content="„Reveal IT's konsulent har gennem flere år hjulpet os med at implementere solide Drupal-løsninger indenfor en række komplekse forretningsområder. Vi har altid været ovenud tilfredse med samarbejdet. Vi har adgang til den absolut højeste kvalitet på Drupal-området, og vi betaler kun for den tid, som vi har brug for. Det er en model, der fungerer rigtig godt for os.”<span style='display: block; margin-top: 1rem; font-style: normal;font-weight: 400;'>Hjalmar Skovholm Hansen, adm. direktør, Vordingborg Køkkenet</span>"
-        layout="italic"
+        className="text-italic"
       />
-      <SectionTitle title="Det kan vi tilføje til dit projekt" />
+      <SectionTitle title="Det kan vi tilføje til dit projekt" className="text-center" />
       <TeaserList
         teasers={[
           {
@@ -120,7 +120,7 @@ const pages = {
       <Wysiwyg
         title="Hvorfor vælge Reveal IT?"
         text="Med mere end 12 år på bagen er vi blandt de mest erfarne Drupal-konsulenter i Danmark. Vi har løst både store og små opgaver, har arbejdet for de største virksomheder og har ledet og leveret hele projekter. Nedenfor kan du læse lidt mere om, hvad der rører sig inden for Drupal og React"
-        layout="center"
+        className="text-center"
       />
       <CardList
         cards={[
