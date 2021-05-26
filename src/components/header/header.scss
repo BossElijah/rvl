@@ -23,6 +23,10 @@
     width: 50px;
     transition: transform .25s;
 
+    g {
+      stroke: #fff;
+    }
+
     @media (hover: hover) {
       &:hover {
         transform: scale(1.2);
