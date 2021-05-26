@@ -3,10 +3,10 @@
   margin: 0 (-$body-padding-small) 48px;
   background: $color-secondary;
   @media ($tablet-up) {
-    margin: 0 (-$body-padding-medium) 48px;
+    margin: 0 (-$body-padding-medium) 64px;
   }
   @media ($desktop-up) {
-    margin: 0 (-$body-padding-large) 48px;
+    margin: 0 (-$body-padding-large) 80px;
   }
 
   .banner__content {
