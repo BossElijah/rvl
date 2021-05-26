@@ -1,5 +1,6 @@
 .section-title {
-  margin: 16px 0 32px;
+  max-width: $max-content-small-width;
+  margin: 16px auto 32px;
   font-size: calc(2.75rem + ((1vw - .01px) * .2084));
-  text-align: center;
+  text-align: left;
 }

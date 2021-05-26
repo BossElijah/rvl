@@ -56,6 +56,40 @@ input {
   font-family: $sans;
 }
 
-.visibility-hidden {
-  visibility: hidden;
+.text-center,
+.text-center * {
+  text-align: center !important;
+}
+
+body.menu--open {
+  overflow: hidden;
+
+  .header__home,
+  .header__language-container {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .hamburger {
+    circle {
+      fill: $color-primary--dark;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        transform: translateX(-50%) scale(1.5) rotate(90deg);
+      }
+    }
+  }
+
+  .menu {
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  main,
+  .footer {
+    visibility: hidden;
+    transition: visibility 0.5s;
+  }
 }

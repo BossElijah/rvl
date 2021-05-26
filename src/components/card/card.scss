@@ -93,5 +93,10 @@
       left: $body-padding-medium;
       width: unset;
     }
+
+    &:hover {
+      background: $color-secondary;
+      color: unset;
+    }
   }
 }
