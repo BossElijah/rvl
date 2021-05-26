@@ -6,7 +6,7 @@ const Hamburger = ({ onClick, showMenu, id }) => (
   <button
     id={id}
     aria-label="Open menu"
-    className={`hamburger${showMenu ? ' menu--open' : ''}`}
+    className="hamburger"
     onClick={onClick}
   >
     {showMenu ? <HamburgerCloseSVG /> : <HamburgerSVG />}

@@ -6,10 +6,11 @@
   left: 0;
   transform: translateY(-100%);
   z-index: 2;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform .5s, visibility .5s;
+  transition: transform .5s ease-in, visibility .5s;
   overflow: scroll;
   background: $color-primary--dark;
 
@@ -42,8 +43,4 @@
       margin-bottom: 50px;
     }
   }
-}
-
-.menu.menu--open {
-  transform: translateY(0);
 }

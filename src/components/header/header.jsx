@@ -5,11 +5,7 @@ import RvlLogoSVG from '../../images/rvl-logo.svg';
 
 const Header = ({ showMenu, hamburgerOnClick }) => (
   <header className="header">
-    <Link
-      to="/"
-      aria-label="Home"
-      className={`header__home${showMenu ? ' visibility-hidden' : ''}`}
-    >
+    <Link to="/" aria-label="Home" className="header__home">
       <RvlLogoSVG />
     </Link>
     <Hamburger
@@ -17,11 +13,7 @@ const Header = ({ showMenu, hamburgerOnClick }) => (
       showMenu={showMenu}
       onClick={hamburgerOnClick}
     />
-    <div
-      className={`header__language-container${
-        showMenu ? ' visibility-hidden' : ''
-      }`}
-    >
+    <div className="header__language-container">
       <Link aria-label="View the site in English" to="/en">
         EN
       </Link>

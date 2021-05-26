@@ -56,14 +56,10 @@
       position: relative;
       bottom: 3px;
       border-bottom: 1px solid #551a8b;
-      font-size: .6875rem;
+      font-size: 0.6875rem;
       @media ($desktop-up) {
-        font-size: .9375rem;
+        font-size: 0.9375rem;
       }
     }
-  }
-
-  &.visibility-hidden {
-    transition: visibility .5s;
   }
 }

@@ -10,13 +10,12 @@ import './styles/styles.scss';
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const bodyClass = document.querySelector('body').classList;
+
   if (showMenu) {
-    document.querySelector('body').style.overflow = 'hidden';
-    document.querySelector('main').style.visibility = 'hidden';
-    document.querySelector('main').style.transition = 'visibility .5s';
-  } else if (document.querySelector('main')) {
-    document.querySelector('body').style.overflow = 'unset';
-    document.querySelector('main').style.visibility = 'unset';
+    bodyClass.add('menu--open');
+  } else {
+    bodyClass.remove('menu--open');
   }
 
   return (
@@ -26,9 +25,9 @@ const App = () => {
         showMenu={showMenu}
         hamburgerOnClick={() => setShowMenu(!showMenu)}
       />
-      <Menu onClick={() => setShowMenu(!showMenu)} showMenu={showMenu} />
+      <Menu onClick={() => setShowMenu(!showMenu)} />
       <Route component={Main} />
-      <Footer showMenu={showMenu} />
+      <Footer />
     </Router>
   );
 };

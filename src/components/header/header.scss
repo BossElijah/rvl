@@ -13,10 +13,15 @@
     margin: 0 (-$body-padding-large);
   }
 
+  .header__home,
+  .header__language-container {
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+
   .header__home svg {
     height: 50px;
     width: 50px;
-    transition: transform .25s;
+    transition: transform 0.25s;
 
     @media (hover: hover) {
       &:hover {
@@ -40,8 +45,8 @@
       font-size: 1.375rem;
       font-weight: 300;
       text-decoration: none;
-      transition: transform .25s, color .25s;
-      
+      transition: transform 0.25s, color 0.25s;
+
       @media ($desktop-up) {
         font-size: 1.5rem;
         padding: unset;

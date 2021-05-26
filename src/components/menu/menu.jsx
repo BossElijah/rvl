@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Menu = ({ showMenu, onClick }) => {
+const Menu = ({ onClick }) => {
   return (
-    <div className={`menu${showMenu ? ' menu--open' : ' visibility-hidden'}`}>
+    <div className="menu">
       <Link onClick={onClick} to="/">
         Forside
       </Link>
