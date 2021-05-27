@@ -1,4 +1,7 @@
 .bullet-list {
+  animation: .75s ease-out fadeIn;
+  animation-delay: .5s;
+
   max-width: $max-content-small-width;
   width: 100%;
   padding: 16px;

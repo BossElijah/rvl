@@ -1,4 +1,7 @@
 .banner {
+  animation: .75s ease-out fadeIn;
+  animation-delay: .5s;
+
   padding: 32px;
   margin: 0 (-$body-padding-small) 48px;
   background: $color-secondary;
@@ -19,7 +22,7 @@
   }
 
   .banner__text {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     font-weight: 200;
     font-size: 1.5rem;
     line-height: 35px;

@@ -1,11 +1,6 @@
 .hero {
-      animation-fill-mode: both;
-    animation-duration: 1000ms;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    opacity: 1;
-    animation-name: react-reveal-836659534729542-1;
-
+  animation: .75s ease-out slideDownFromTop;
+  animation-delay: .5s;
 
   display: flex;
   position: relative;

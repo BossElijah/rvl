@@ -1,4 +1,7 @@
 .teaser-deck {
+  animation: .75s ease-out slideUpFromBottom;
+  animation-delay: .5s;
+
   max-width: calc(#{$max-content-width} - 20px);
   border: $body-padding-small solid $color-tertiary;
   margin: 0 0 $body-padding-small;

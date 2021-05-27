@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Menu = ({ onClick }) => {
+const Menu = ({ closeMenuOnClick }) => {
   return (
     <div className="menu">
-      <Link onClick={onClick} to="/">
+      <Link onClick={closeMenuOnClick} to="/">
         Forside
       </Link>
-      <Link onClick={onClick} to="/jeres-udvidede-web-afdeling">
+      <Link onClick={closeMenuOnClick} to="/jeres-udvidede-web-afdeling">
         Konsulenter
       </Link>
-      <Link onClick={onClick} to="/drupal">
+      <Link onClick={closeMenuOnClick} to="/drupal">
         Drupal
       </Link>
-      <Link onClick={onClick} to="/react">
+      <Link onClick={closeMenuOnClick} to="/react">
         React
       </Link>
-      <Link onClick={onClick} to="/online-booking-system-hotel">
+      <Link onClick={closeMenuOnClick} to="/online-booking-system-hotel">
         Hotel-booking
       </Link>
-      <Link onClick={onClick} to="/artikler">
+      <Link onClick={closeMenuOnClick} to="/artikler">
         Artikler
       </Link>
-      <Link onClick={onClick} to="/om-os">
+      <Link onClick={closeMenuOnClick} to="/om-os">
         Om os
       </Link>
     </div>
