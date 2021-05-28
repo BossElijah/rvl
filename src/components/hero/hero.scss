@@ -46,6 +46,12 @@
     }
   }
 
+  .front-page svg {
+    @media ($tablet-up) {
+      width: unset;
+    }
+  }
+
   .hero__title {
     background: -webkit-linear-gradient($color-tertiary, #03475f);
     background-clip: text;

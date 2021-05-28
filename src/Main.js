@@ -38,13 +38,7 @@ const Main = ({ location }) => {
 
   if (pathname) {
     const currentPage = require(`./data/${pages[location.pathname]}`);
-    const pageTitle =
-      pathname.charAt(0).toUpperCase() +
-      pathname
-        .slice(1)
-        .substring(0, pathname.length - 6)
-        .replace(/-/g, ' ');
-    document.title = `${pageTitle} | Reveal IT`;
+    document.title = currentPage.title;
 
     return (
       <main role="main">
