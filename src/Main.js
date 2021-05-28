@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Components.
 import Hero from './components/hero/hero';
 import TeaserDeck from './components/teaser-deck/teaser-deck';
 import PageTitle from './components/page-title/page-title';
@@ -12,16 +10,6 @@ import TeaserList from './components/teaser-list/teaser-list';
 import CardList from './components/card-list/card-list';
 import ContactForm from './components/contact-form/contact-form';
 import NotFound from './components/not-found/not-found';
-
-// SVGs.
-// import ReactSVG from './images/react.svg';
-// import SkillsSVG from './images/skills.svg';
-// import BrainSVG from './images/brain.svg';
-// import TelevizionSVG from './images/televizion.svg';
-// import FolderSVG from './images/folder.svg';
-// import RvlLogoTextSVG from './images/rvl-logo-text.svg';
-// import DrupalThinkReactSVG from './images/drupal-think-react.svg';
-// import ManSittingAtDesk from './images/man-sitting-desk.svg';
 
 const Deck = ({ type, ...props }) => {
   const deckMap = {
