@@ -12,7 +12,9 @@ const TeaserDeck = ({
   buttonLayout
 }) => (
   <section className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
-    <div className="teaser-deck__image-container">{img}</div>
+    <div className="teaser-deck__image-container">
+      <img src={img} alt="" />
+    </div>
     <div className="teaser-deck__content">
       <TextWithButton
         title={title}

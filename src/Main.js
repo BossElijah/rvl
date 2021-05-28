@@ -59,6 +59,7 @@ const Main = ({ location }) => {
         .substring(0, pathname.length - 6)
         .replace(/-/g, ' ');
     document.title = `${pageTitle} | Reveal IT`;
+    
     return (
       <main role="main">
         {currentPage.decks.map((deck, index) => (
