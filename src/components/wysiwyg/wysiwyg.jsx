@@ -17,7 +17,7 @@ const Wysiwyg = ({
     {text && <p dangerouslySetInnerHTML={{ __html: text }} />}
     {buttonUrl && (
       <Button url={buttonUrl} layout={buttonLayout} aria={buttonAria}>
-        {buttonIcon} {buttonText}
+        {buttonIcon && <img src={buttonIcon} alt="" />} {buttonText}
       </Button>
     )}
   </section>
