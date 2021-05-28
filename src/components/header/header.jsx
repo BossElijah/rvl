@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import Hamburger from '../hamburger/hamburger';
 import RvlLogoSVG from '../../images/rvl-logo.svg';
 
-const Header = ({ showMenu, hamburgerOnClick }) => (
+const Header = ({ showMenu, hamburgerOnClick, homeButton, languages }) => (
   <header className="header">
-    <Link to="/" aria-label="Home" className="header__home">
+    <Link to={homeButton} aria-label="Home" className="header__home">
       <RvlLogoSVG />
     </Link>
     <Hamburger
@@ -14,12 +14,13 @@ const Header = ({ showMenu, hamburgerOnClick }) => (
       onClick={hamburgerOnClick}
     />
     <div className="header__language-container">
-      <Link aria-label="View the site in English" to="/en">
-        EN
-      </Link>
-      <Link aria-label="Se siden på Dansk" to="/">
-        DA
-      </Link>
+      {languages.map(({language, text, url}, index) => {
+        return (
+          <Link key={index} aria-label={`View the site in ${language}`} to={url}>
+            {text}
+          </Link>
+        );
+      })}
     </div>
     <Hamburger
       id="hamburger-bottom"

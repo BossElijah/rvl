@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import data from './data/global.json';
 import ScrollToTop from './ScrollToTop';
 import Header from './components/header/header';
 import Menu from './components/menu/menu';
@@ -24,10 +25,11 @@ const App = () => {
       <Header
         showMenu={showMenu}
         hamburgerOnClick={() => setShowMenu(!showMenu)}
+        {...data.header}
       />
-      <Menu onClick={() => setShowMenu(!showMenu)} />
+      <Menu onClick={() => setShowMenu(!showMenu)} {...data.menu} />
       <Route component={Main} />
-      <Footer />
+      <Footer {...data.footer} />
     </Router>
   );
 };

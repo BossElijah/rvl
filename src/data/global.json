@@ -1,0 +1,58 @@
+{
+  "header": {
+    "homeButton": "/",
+    "languages": [
+      {
+        "language": "danish",
+        "text": "DA",
+        "url": "/"
+      },
+      {
+        "language": "english",
+        "text": "EN",
+        "url": "/en"
+      }
+    ]
+  },
+  "menu": {
+    "links": [
+      {
+        "text": "Forside",
+        "url": "/"
+      },
+      {
+        "text": "Konsulenter",
+        "url": "/jeres-udvidede-web-afdeling"
+      },
+      {
+        "text": "Drupal",
+        "url": "/drupal"
+      },
+      {
+        "text": "React",
+        "url": "/react"
+      },
+      {
+        "text": "Hotel-booking",
+        "url": "/online-booking-system-hotel"
+      },
+      {
+        "text": "Artikler",
+        "url": "/artikler"
+      },
+      {
+        "text": "Om os",
+        "url": "/om-os"
+      }
+    ]
+  },
+  "footer": {
+    "phone": "+45 71 99 03 77",
+    "mail": "info@revealit.dk",
+    "associate": {
+      "logo": "https://eo7h9zskqvm.exactdn.com/wp-content/uploads/2021/04/Digitalist_Logotype_White-RGB.png?strip=all&lossy=1&quality=92&fit=208,55&ssl=1",
+      "text": "associate",
+      "url": "https://digitalist.global"
+    }
+  }
+}

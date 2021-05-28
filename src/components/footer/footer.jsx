@@ -1,20 +1,20 @@
 import React from 'react';
 
-const Footer = () => (
+const Footer = ({ phone, mail, associate: {logo, text, url} }) => (
   <footer className="footer">
     <div className="footer__content-wrapper">
       <div className="footer__contact-info">
-        <p>+45 71 99 03 77</p>
-        <a href="mailto:info@revealit.dk">info@revealit.dk</a>
+        <p>{phone}</p>
+        <a href={`mailto:${mail}`}>{mail}</a>
       </div>
     </div>
-    <a href="https://digitalist.global" className="footer__partner-container">
+    <a href={url} className="footer__partner-container">
       <img
-        src={process.env.PUBLIC_URL + '/images/digitalist_logo.png'}
+        src={logo}
         alt=""
       />
       &nbsp;
-      <span>associate</span>
+      <span>{text}</span>
     </a>
   </footer>
 );
