@@ -21,8 +21,8 @@ const TextWithButton = ({
       aria={buttonAria}
       layout={buttonLayout}
       url={buttonUrl}
+      icon={buttonIcon}
     >
-      {buttonIcon && <img src={buttonIcon} alt="" />}
       {buttonText}
     </Button>
   </>

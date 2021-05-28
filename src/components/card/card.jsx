@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../image/image';
 import TextWithButton from '../text-with-button/text-with-button';
 
 const Card = ({
@@ -11,7 +12,7 @@ const Card = ({
   buttonAria
 }) => (
   <div className="card">
-    <img src={img} alt="" />
+    <Image src={img} />
     <div className="card__content">
       <TextWithButton
         title={title}
