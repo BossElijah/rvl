@@ -10,11 +10,15 @@ import './styles/styles.scss';
 
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
-
   const bodyClass = document.querySelector('body').classList;
 
   if (showMenu) {
     bodyClass.add('menu--open');
+    document.addEventListener('keyup', e => {
+      if (e.key === 'Escape') {
+        setShowMenu(!showMenu);
+      }
+    });
   } else {
     bodyClass.remove('menu--open');
   }
