@@ -1,6 +1,4 @@
-import React from 'react';
 
-const TelevizionSVG = () => (
   <svg viewBox="0 0 930 980" xmlns="http://www.w3.org/2000/svg">
     <g fill="none">
       <path
@@ -18,6 +16,4 @@ const TelevizionSVG = () => (
       ></path>
     </g>
   </svg>
-);
 
-export default TelevizionSVG;

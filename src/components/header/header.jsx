@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hamburger from '../hamburger/hamburger';
-import RvlLogoSVG from '../../images/rvl-logo.svg';
+import RvlLogoSVG from './rvl-logo.svg';
 
 const Header = ({ showMenu, hamburgerOnClick, homeButton, languages }) => (
   <header className="header">

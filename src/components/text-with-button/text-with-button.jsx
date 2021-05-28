@@ -22,7 +22,7 @@ const TextWithButton = ({
       layout={buttonLayout}
       url={buttonUrl}
     >
-      {buttonIcon}
+      {buttonIcon && <img src={buttonIcon} alt="" />}
       {buttonText}
     </Button>
   </>

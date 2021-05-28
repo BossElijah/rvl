@@ -1,5 +1,5 @@
 import React from 'react';
-import BulletSVG from '../../images/bullet.svg';
+import BulletSVG from '../bullet/bullet';
 
 const BulletList = ({ item }) => (
   <ul className="bullet-list">

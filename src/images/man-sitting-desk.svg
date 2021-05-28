@@ -1,6 +1,4 @@
-import React from 'react';
 
-const ManSittingAtDesk = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 641.92 778.38"
@@ -191,6 +189,4 @@ const ManSittingAtDesk = () => (
       opacity=".85"
     />
   </svg>
-);
 
-export default ManSittingAtDesk;

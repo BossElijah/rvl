@@ -1,6 +1,4 @@
-import React from 'react';
 
-const DrupalThinkReactSVG = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 626.1 457.6"
@@ -44,6 +42,3 @@ const DrupalThinkReactSVG = () => (
       strokeWidth="6"
     />
   </svg>
-);
-
-export default DrupalThinkReactSVG;

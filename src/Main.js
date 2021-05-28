@@ -14,17 +14,14 @@ import ContactForm from './components/contact-form/contact-form';
 import NotFound from './components/not-found/not-found';
 
 // SVGs.
-import DrupalSVG from './images/drupal-white.svg';
-import DrupalBigSVG from './images/drupal-big.svg';
-import ReactSVG from './images/react.svg';
-import ReactBigSVG from './images/react-big.svg';
-import SkillsSVG from './images/skills.svg';
-import BrainSVG from './images/brain.svg';
-import TelevizionSVG from './images/televizion.svg';
-import FolderSVG from './images/folder.svg';
-import RvlLogoTextSVG from './images/rvl-logo-text.svg';
-import DrupalThinkReactSVG from './images/drupal-think-react.svg';
-import ManSittingAtDesk from './images/man-sitting-desk.svg';
+// import ReactSVG from './images/react.svg';
+// import SkillsSVG from './images/skills.svg';
+// import BrainSVG from './images/brain.svg';
+// import TelevizionSVG from './images/televizion.svg';
+// import FolderSVG from './images/folder.svg';
+// import RvlLogoTextSVG from './images/rvl-logo-text.svg';
+// import DrupalThinkReactSVG from './images/drupal-think-react.svg';
+// import ManSittingAtDesk from './images/man-sitting-desk.svg';
 
 const Deck = ({ type, ...props }) => {
   const deckMap = {
@@ -59,7 +56,7 @@ const Main = ({ location }) => {
         .substring(0, pathname.length - 6)
         .replace(/-/g, ' ');
     document.title = `${pageTitle} | Reveal IT`;
-    
+
     return (
       <main role="main">
         {currentPage.decks.map((deck, index) => (
