@@ -31,7 +31,8 @@ const Deck = ({ type, ...props }) => {
 const pages = {
   '/': 'home.json',
   '/jeres-udvidede-web-afdeling': 'consultants.json',
-  '/drupal': 'drupal.json'
+  '/drupal': 'drupal.json',
+  '/react': 'react.json',
 };
 
 const Main = ({ location }) => {
