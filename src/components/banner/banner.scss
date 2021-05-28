@@ -28,4 +28,20 @@
       font-style: italic;
     }
   }
+
+  .banner__buttons-container {
+    display: flex;
+  }
+
+  .button {
+    margin-right: 24px;
+  }
+}
+
+.banner--tertiary-color {
+  background: $color-tertiary;
+
+  * {
+    color: $color-primary;
+  }
 }

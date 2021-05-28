@@ -15,13 +15,23 @@
     line-height: 30px;
   }
 
+  h3 {
+    margin: 24px 0 8px;
+    font-size: 2rem;
+  }
+
   ul {
     margin: 15px;
     margin-left: 40px;
   }
 
+  .wysiwyg__buttons-container {
+    display: flex;
+  }
+
   .button {
     max-width: 240px;
+    margin-right: 24px;
     @media ($mobile-up) {
       position: relative;
       left: 50%;

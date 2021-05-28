@@ -35,6 +35,18 @@
   }
 }
 
+.button--outline-dark {
+  color: $color-primary;
+  border: 2px solid $color-primary;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $color-primary;
+      color: $color-text;
+    }
+  }
+}
+
 .button--primary {
   background: $color-tertiary;
   color: $color-primary;

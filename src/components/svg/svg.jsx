@@ -8,6 +8,9 @@ import { ReactComponent as Folder } from '../../svg/folder.svg';
 import { ReactComponent as DrupalReact } from '../../svg/drupal-react.svg';
 import { ReactComponent as Office } from '../../svg/office.svg';
 import { ReactComponent as RvlText } from '../../svg/rvl-text.svg';
+import { ReactComponent as Texts } from '../../svg/texts.svg';
+import { ReactComponent as Phone } from '../../svg/phone.svg';
+import { ReactComponent as Mail } from '../../svg/mail.svg';
 
 const Svg = ({ type }) => {
   let icon;
@@ -29,6 +32,12 @@ const Svg = ({ type }) => {
     icon = <Office />;
   } else if (type === 'rvl-text') {
     icon = <RvlText />;
+  } else if (type === 'texts') {
+    icon = <Texts />;
+  } else if (type === 'phone') {
+    icon = <Phone />;
+  } else if (type === 'mail') {
+    icon = <Mail />;
   } else {
     icon = '';
   }
