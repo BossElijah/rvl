@@ -29,7 +29,8 @@ const Deck = ({ type, ...props }) => {
 };
 
 const pages = {
-  '/': 'hjem.json'
+  '/': 'home.json',
+  '/jeres-udvidede-web-afdeling': 'consultants.json'
 };
 
 const Main = ({ location }) => {

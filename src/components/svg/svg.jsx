@@ -5,8 +5,10 @@ import { ReactComponent as Skills } from '../../svg/skills.svg';
 import { ReactComponent as Brain } from '../../svg/brain.svg';
 import { ReactComponent as Televizion } from '../../svg/tv.svg';
 import { ReactComponent as Folder } from '../../svg/folder.svg';
+import { ReactComponent as DrupalReact } from '../../svg/drupal-react.svg';
+import { ReactComponent as Office } from '../../svg/office.svg';
 
-const Icon = ({ type }) => {
+const Svg = ({ type }) => {
   let icon;
   if (!type) {
     icon = '';
@@ -24,6 +26,10 @@ const Icon = ({ type }) => {
       icon = <Televizion />;
     } else if (type === 'folder') {
       icon = <Folder />;
+    } else if (type === 'drupal-react') {
+      icon = <DrupalReact />;
+    } else if (type === 'man-at-office') {
+      icon = <Office />;
     } else {
       icon = '';
     }
@@ -31,4 +37,4 @@ const Icon = ({ type }) => {
   return icon;
 };
 
-export default Icon;
+export default Svg;

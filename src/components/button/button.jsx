@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Icon from '../icon/icon';
+import Svg from '../svg/svg';
 
 const Button = ({ url, className, layout, aria, icon, children }) => (
   <Link
@@ -10,7 +10,7 @@ const Button = ({ url, className, layout, aria, icon, children }) => (
     }`}
     to={url}
   >
-    {icon && <Icon type={icon} />}
+    {icon && <Svg type={icon} />}
     {children}
   </Link>
 );

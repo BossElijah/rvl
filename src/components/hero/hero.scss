@@ -39,8 +39,11 @@
     margin: auto;
   }
 
-  img {
+  svg {
     margin: 64px auto 32px;
+    @media ($tablet-up) {
+      width: 50%;
+    }
   }
 
   .hero__title {

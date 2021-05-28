@@ -13,9 +13,10 @@
     }
 
     svg {
-      flex-shrink: 0;
       margin: 0 auto 16px;
+      width: 50%;
       @media ($mobile-up) {
+        width: unset;
         margin: auto 32px auto 0;
       }
     }

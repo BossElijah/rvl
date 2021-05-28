@@ -1,10 +1,10 @@
 import React from 'react';
-import Icon from '../icon/icon';
+import Svg from '../svg/svg';
 
 const TeaserItem = ({ icon, title, text }) => (
   <div className="teaser-item">
     <div className="teaser-item__title-container">
-      <Icon type={icon} />
+      <Svg type={icon} />
       <h3 className="teaser-item__title">{title}</h3>
     </div>
     <p className="teaser-item__text">{text}</p>
