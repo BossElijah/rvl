@@ -36,7 +36,8 @@ const pages = {
   '/online-booking-system-hotel': 'hotels.json',
   '/artikler': 'articles.json',
   '/om-os': 'about-us.json',
-  '/opgradering-af-drupal': 'upgrade-drupal-article.json'
+  '/opgradering-af-drupal': 'upgrade-drupal-article.json',
+  '/open-source': 'open-source-article.json'
 };
 
 const Main = ({ location }) => {

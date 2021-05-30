@@ -25,6 +25,10 @@
     margin-left: 40px;
   }
 
+  a:not(.button) {
+    color: $color-tertiary;
+  }
+
   .wysiwyg__buttons-container {
     display: flex;
   }
