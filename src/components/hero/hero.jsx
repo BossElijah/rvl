@@ -1,8 +1,9 @@
 import React from 'react';
 import Svg from '../svg/svg';
 import PageTitle from '../page-title/page-title';
+import Button from '../button/button';
 
-const Hero = ({ title, logo, logoType, logoClass, backgroundImg }) => (
+const Hero = ({ title, titleClass, logo, logoType, logoClass, backgroundImg, text, button }) => (
   <section className="hero">
     <div
       className="hero__background-image"
@@ -16,7 +17,9 @@ const Hero = ({ title, logo, logoType, logoClass, backgroundImg }) => (
       }
     >
     {logoType === 'png' ? <img src={logo} alt="" /> : <Svg type={logo} />}
-      {title && <PageTitle className="hero__title" title={title} />}
+      {title && <PageTitle className={titleClass ? `hero__title hero__title--${titleClass}` : 'hero__title'} title={title} />}
+      {text && <p>{text}</p>}
+      {button && <Button {...button}>{button.text}</Button>}
     </div>
   </section>
 );

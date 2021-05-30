@@ -33,6 +33,7 @@ const pages = {
   '/jeres-udvidede-web-afdeling': 'consultants.json',
   '/drupal': 'drupal.json',
   '/react': 'react.json',
+  '/online-booking-system-hotel': 'hotels.json'
 };
 
 const Main = ({ location }) => {
@@ -49,13 +50,14 @@ const Main = ({ location }) => {
         ))}
       </main>
     );
+  } else {
+    document.title = '404 - Page Not Found';
+    return (
+      <main role="main">
+        <NotFound />
+      </main>
+    );
   }
-
-  return (
-    <main role="main">
-      <NotFound />
-    </main>
-  );
 };
 
 export default Main;
