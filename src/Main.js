@@ -37,7 +37,8 @@ const pages = {
   '/artikler': 'articles.json',
   '/om-os': 'about-us.json',
   '/opgradering-af-drupal': 'upgrade-drupal-article.json',
-  '/open-source': 'open-source-article.json'
+  '/open-source': 'open-source-article.json',
+  '/drupal-fremtiden-er-headless': 'drupal-headless-article.json'
 };
 
 const Main = ({ location }) => {
