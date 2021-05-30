@@ -33,7 +33,8 @@ const pages = {
   '/jeres-udvidede-web-afdeling': 'consultants.json',
   '/drupal': 'drupal.json',
   '/react': 'react.json',
-  '/online-booking-system-hotel': 'hotels.json'
+  '/online-booking-system-hotel': 'hotels.json',
+  '/artikler': 'articles.json'
 };
 
 const Main = ({ location }) => {
