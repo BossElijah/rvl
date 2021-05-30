@@ -4,7 +4,7 @@
   .section-title {
     text-align: left;
   }
-  
+
   .text-and-media__content {
     display: flex;
     flex-direction: column;
@@ -12,12 +12,19 @@
       flex-direction: row;
     }
 
-    svg {
+    svg,
+    img {
       margin: 0 auto 16px;
       width: 50%;
       @media ($mobile-up) {
         width: unset;
         margin: auto 32px auto 0;
+      }
+    }
+
+    img {
+      @media ($mobile-up) {
+        width: 35%;
       }
     }
 
