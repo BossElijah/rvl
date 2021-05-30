@@ -5,11 +5,8 @@ const TeaserDeck = ({
   img,
   title,
   text,
-  buttonText,
   layout,
-  buttonIcon,
-  buttonUrl,
-  buttonLayout
+  button
 }) => (
   <section className={`teaser-deck${layout ? ' teaser-deck--' + layout : ''}`}>
     <div className="teaser-deck__image-container">
@@ -21,11 +18,8 @@ const TeaserDeck = ({
         titleClassname="teaser-deck__title"
         text={text}
         textClassname="teaser-deck__text"
-        buttonLayout={buttonLayout}
-        buttonUrl={buttonUrl}
-        buttonText={buttonText}
+        button={button}
         buttonClassname="teaser-deck__button"
-        buttonIcon={buttonIcon}
       />
     </div>
   </section>

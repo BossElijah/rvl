@@ -13,6 +13,7 @@ import { ReactComponent as Phone } from '../../svg/phone.svg';
 import { ReactComponent as Mail } from '../../svg/mail.svg';
 import { ReactComponent as ReactText } from '../../svg/react-text.svg';
 import { ReactComponent as RvlLogo } from '../../svg/rvl-logo.svg';
+import { ReactComponent as DrupalUpgrade } from '../../svg/drupal-upgrade.svg';
 
 const Svg = ({ type }) => {
   let icon;
@@ -44,6 +45,8 @@ const Svg = ({ type }) => {
     icon = <ReactText />;
   } else if (type === 'rvl-logo') {
     icon = <RvlLogo />;
+  } else if (type === 'drupal-upgrade') {
+    icon = <DrupalUpgrade />;
   } else {
     icon = '';
   }

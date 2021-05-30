@@ -6,24 +6,14 @@ const TextWithButton = ({
   titleClassname,
   text,
   textClassname,
-  buttonLayout,
-  buttonUrl,
-  buttonText,
-  buttonIcon,
-  buttonAria,
+  button,
   buttonClassname
 }) => (
   <>
     <h2 className={titleClassname}>{title}</h2>
     <p className={textClassname}>{text}</p>
-    <Button
-      className={buttonClassname}
-      aria={buttonAria}
-      layout={buttonLayout}
-      url={buttonUrl}
-      icon={buttonIcon}
-    >
-      {buttonText}
+    <Button className={buttonClassname} {...button}>
+      {button.text}
     </Button>
   </>
 );
