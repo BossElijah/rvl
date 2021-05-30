@@ -12,6 +12,7 @@ import { ReactComponent as Texts } from '../../svg/texts.svg';
 import { ReactComponent as Phone } from '../../svg/phone.svg';
 import { ReactComponent as Mail } from '../../svg/mail.svg';
 import { ReactComponent as ReactText } from '../../svg/react-text.svg';
+import { ReactComponent as RvlLogo } from '../../svg/rvl-logo.svg';
 
 const Svg = ({ type }) => {
   let icon;
@@ -41,6 +42,8 @@ const Svg = ({ type }) => {
     icon = <Mail />;
   } else if (type === 'react-text') {
     icon = <ReactText />;
+  } else if (type === 'rvl-logo') {
+    icon = <RvlLogo />;
   } else {
     icon = '';
   }

@@ -34,7 +34,8 @@ const pages = {
   '/drupal': 'drupal.json',
   '/react': 'react.json',
   '/online-booking-system-hotel': 'hotels.json',
-  '/artikler': 'articles.json'
+  '/artikler': 'articles.json',
+  '/om-os': 'about-us.json'
 };
 
 const Main = ({ location }) => {
