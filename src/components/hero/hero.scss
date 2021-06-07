@@ -42,7 +42,7 @@
   }
 
   .hero__content-container > svg, .hero__content-container > img{
-    max-width: 100vw;
+    max-width: 100%;
     margin: 64px auto 32px;
     @media ($tablet-up) {
       width: 50%;
